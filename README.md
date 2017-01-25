@@ -7,6 +7,7 @@ YAM is a browser based animation editor with vide background and key frame based
 Using YAM the user is able to create animations, then include them in any web page, including mobile web.
 
 The editor contains the following features:
+
 1. video background: it is possible to add video files as background, there is a built in editor to select snippets from a video file. 
 2. image editor: user is able to resize/rotate/crop images. Also there are several filter effects to apply.
 3. text effects: the editor includes a text effect editor to add special fill, outline and shadow effects (gradient and cut-out modes) to and there is a wide variety of font faces including Chinese, Japanese and Hieroglyphic fonts.
@@ -42,7 +43,7 @@ sudo apt-get install graphicsmagick
 ```
 sudo port install graphicsmagick
 ```
-##Steps needed to deploy a YAM editor from the scratch
+##Steps needed to deploy a YAM from the scratch
 
 1. checkout **editor_ux_reorg** branch from the repo
 2. cd ./yam/yam_editor
