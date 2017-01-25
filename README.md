@@ -1,6 +1,9 @@
 # yam
 A proof of concept HTML5 Animation editor. 
 
+# WARNING :)
+Be aware that this repo contains some large test data, for example a test mp4 and some image. You've been warned :D
+
 ## Description
 YAM is a browser based animation editor with support for video and key frame based animations, implemented in HTML5 and JavaScript. YAM is Yet (another) Animation Manager.
 
