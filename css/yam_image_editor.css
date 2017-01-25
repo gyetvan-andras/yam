@@ -41,12 +41,6 @@
 .tab-pane {
   margin-top: 5px; }
 
-.nav-sm > li > a {
-  position: relative;
-  display: block;
-  padding: 5px 5px;
-  margin: 2px; }
-
 .preset-button {
   padding: 5px 0px; }
 
@@ -162,3 +156,12 @@ input[type=range]::-moz-range-thumb {
 .nav-justified > li {
   width: 75px;
   font-size: 14px; }
+
+.nav-justified > li > a {
+  color: #aaa; }
+
+.nav-sm > li > a {
+  position: relative;
+  display: block;
+  padding: 5px 5px;
+  margin: 2px; }

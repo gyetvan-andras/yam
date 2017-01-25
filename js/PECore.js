@@ -463,49 +463,51 @@ PECore.prototype.onAssetsLoaded = function(editor, loader, resources) {
 		sample = self.createSprite(resources['images/sample.jpg'].texture,resources['images/sample.jpg'].url);
 		sample.node_name = 'sample';
 		self.objectLayer.addChild(sample);
+
 		// sample.filters = [new PIXI.filters.PixelateFilter()];
+
 		// var car = self.createSprite(resources.car.texture,resources.car.url);
 		// car.node_name = 'car';
 		// self.objectLayer.addChild(car);
 
-		for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
-			sfx = new ShapeFx();
-			self.objectLayer.addChild(sfx);
-			sfx.type = OBJ_TYPE.SHAPE;
-			sfx.kind = kind;
-			style = sfx.style;
-			style.fill = false;
-			sfx.style = style;
-			sfx.position.x = (kind*120);
-			sfx.position.y = 70;
-			sfx.locked = false;
-		}
+		// for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
+		// 	sfx = new ShapeFx();
+		// 	self.objectLayer.addChild(sfx);
+		// 	sfx.type = OBJ_TYPE.SHAPE;
+		// 	sfx.kind = kind;
+		// 	style = sfx.style;
+		// 	style.fill = false;
+		// 	sfx.style = style;
+		// 	sfx.position.x = (kind*120);
+		// 	sfx.position.y = 70;
+		// 	sfx.locked = false;
+		// }
 
-		for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
-			sfx = new ShapeFx();
-			self.objectLayer.addChild(sfx);
-			sfx.type = OBJ_TYPE.SHAPE;
-			sfx.kind = kind;
+		// for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
+		// 	sfx = new ShapeFx();
+		// 	self.objectLayer.addChild(sfx);
+		// 	sfx.type = OBJ_TYPE.SHAPE;
+		// 	sfx.kind = kind;
 
-			sfx.position.x = (kind*120);
-			sfx.position.y = 140;
-			sfx.locked = false;
-		}
+		// 	sfx.position.x = (kind*120);
+		// 	sfx.position.y = 140;
+		// 	sfx.locked = false;
+		// }
 
-		for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
-			sfx = new ShapeFx();
-			self.objectLayer.addChild(sfx);
-			sfx.type = OBJ_TYPE.SHAPE;
-			sfx.kind = kind;
+		// for(kind = SHAPEFX.LINE; kind <= SHAPEFX.CIRCLE;kind++) {
+		// 	sfx = new ShapeFx();
+		// 	self.objectLayer.addChild(sfx);
+		// 	sfx.type = OBJ_TYPE.SHAPE;
+		// 	sfx.kind = kind;
 
-			style = sfx.style;
-			style.gradientStyle = SHAPEFX.RADIAL;
-			sfx.style = style;
+		// 	style = sfx.style;
+		// 	style.gradientStyle = SHAPEFX.RADIAL;
+		// 	sfx.style = style;
 
-			sfx.position.x = (kind*120);
-			sfx.position.y = 210;
-			sfx.locked = false;
-		}
+		// 	sfx.position.x = (kind*120);
+		// 	sfx.position.y = 210;
+		// 	sfx.locked = false;
+		// }
 
 		self.newText();
 	} else {
@@ -583,7 +585,7 @@ PECore.prototype.loadSampleData = function() {
 
 
 	loader.add('images/sample.jpg');
-	loader.add('images/car.svg');
+	// loader.add('images/car.svg');
 	loader.once('complete',function(loader, resources) {
 		setTimeout(function() {
 			self.onAssetsLoaded(self,loader,resources);

@@ -3,7 +3,7 @@ class Test {
     this._bananas = [];
   }
   populate() {
-    for(var i of [1,2,3,4]) {
+    for(var i of [1,2,3,4,5]) {
       this._bananas.push(i);
     }
     console.log("Test populated");

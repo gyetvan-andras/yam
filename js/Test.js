@@ -14,7 +14,7 @@ var Test = function () {
   _createClass(Test, [{
     key: "populate",
     value: function populate() {
-      var _arr = [1, 2, 3, 4];
+      var _arr = [1, 2, 3, 4, 5];
 
       for (var _i = 0; _i < _arr.length; _i++) {
         var i = _arr[_i];

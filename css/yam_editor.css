@@ -40,27 +40,22 @@ body {
   width: 100%;
   height: 100%;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column; }
 
 .yam-row-header {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 40px;
       -ms-flex: 0 0 40px;
           flex: 0 0 40px;
   background-color: #205081;
@@ -68,12 +63,10 @@ body {
 
 .yam-row-footer {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   height: 200px;
@@ -83,37 +76,30 @@ body {
   top: auto !important;
   margin-top: 5px;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
 .yam-row-main {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1 !important;
-  -webkit-flex: 1 1 100px !important;
       -ms-flex: 1 1 100px !important;
           flex: 1 1 100px !important; }
 
 .yam-footer-timeline {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 200px;
       -ms-flex: 1 1 200px;
           flex: 1 1 200px;
   border: 1px solid #A1B7D6;
@@ -123,16 +109,13 @@ body {
 
 .yam-footer-properties {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 250px;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   border: 1px solid #A1B7D6;
@@ -140,31 +123,25 @@ body {
 
 .yam-row-timing {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 31px;
       -ms-flex: 0 0 31px;
           flex: 0 0 31px; }
 
 .yam-timing-properties {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 250px;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   border: 1px solid #A1B7D6;
@@ -173,7 +150,6 @@ body {
 
 .yam-timing-button {
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 20px;
       -ms-flex: 0 0 20px;
           flex: 0 0 20px;
   color: white;
@@ -182,16 +158,13 @@ body {
 
 .yam-timing-scale {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 27px;
       -ms-flex: 1 1 27px;
           flex: 1 1 27px;
   border: 1px solid #A1B7D6;
@@ -202,16 +175,13 @@ body {
 
 .yam-left-col {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 250px;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   margin: 1px;
@@ -220,16 +190,13 @@ body {
 
 .yam-right-col {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 250px;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   border: 1px solid #A1B7D6;
@@ -238,16 +205,13 @@ body {
 
 .yam-main-col {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: row;
       -ms-flex-direction: row;
           flex-direction: row;
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100px;
       -ms-flex: 1 1 100px;
           flex: 1 1 100px;
   border: 1px solid #A1B7D6;
@@ -273,7 +237,6 @@ body {
 
 .yam-header-spacer {
   -webkit-box-flex: 1;
-  -webkit-flex: 1 1 20px;
       -ms-flex: 1 1 20px;
           flex: 1 1 20px; }
 
@@ -604,24 +567,20 @@ a.font-variant {
   overflow-x: hidden;
   padding-left: 5px;
   -webkit-box-flex: 2;
-  -webkit-flex: 2 2 250px;
       -ms-flex: 2 2 250px;
           flex: 2 2 250px; }
 
 /* ANIMATION-PANEL ====================================== */
 .animation-panel {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   overflow-y: auto;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 250px;
       -ms-flex: 0 0 250px;
           flex: 0 0 250px;
   border: 1px solid #A1B7D6;
@@ -633,7 +592,6 @@ a.font-variant {
   overflow-x: hidden;
   padding-left: 5px;
   -webkit-box-flex: 2;
-  -webkit-flex: 2 2 250px;
       -ms-flex: 2 2 250px;
           flex: 2 2 250px; }
 
@@ -644,7 +602,6 @@ a.font-variant {
   padding-left: 5px;
   padding-top: 5px;
   -webkit-box-flex: 0;
-  -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto; }
 
