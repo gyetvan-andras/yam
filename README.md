@@ -17,10 +17,10 @@ The editor contains the following features:
 4. key frame based animation: the editor supports key frame based animation editing. Any item (image, shape, text) can be moved, scaled, rotated. There are options to tint and fade items too. The animation timing can be controlled by tweens.
 5. shapes: basic shapes can be added to the animation, including: line, triangle, rectangle and circle. Similarly to the text effects, shapes can have special fill, outline and drop shadow properties.
 6. embedding: when an animation is published, then it can be embedded to any other web page. Embedding should look like the following snippets:
-```
-		<div style="width:100%; height:550px;">
-			<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
-		</div>
+```html
+<div style="width:100%; height:550px;">
+	<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
+</div>
 ```
 
 ## Installation
