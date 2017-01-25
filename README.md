@@ -48,9 +48,10 @@ sudo port install graphicsmagick
 ```
 ##Steps needed to deploy a YAM from the scratch
 
-1. checkout **editor_ux_reorg** branch from the repo
-2. cd ./yam/yam_editor
-3. mkdir uploads; mkdir published; mkdir yam_templates
-4. node server/init_yam_db.js
-5. node server.js
+1. checkout the repo
+2. cd yam
+3. npm i
+4. mkdir uploads; mkdir published; mkdir yam_templates
+5. node server/init_yam_db.js
+6. node server.js
 
