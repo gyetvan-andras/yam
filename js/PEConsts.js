@@ -1,0 +1,64 @@
+var ASSET_TYPE = {
+	IMAGE: 0,		//sprite
+	SOUND: 1,		//sound
+	PARTICLE:2,		//particle system - WITH SCRIPT
+	ANIMATION:3, 	//spritesheet - WITH SCRIPT
+	VIDEO:4,		//video
+	BIT:5			//complete object hierarchy with optional timeline - WITH SCRIPT
+};
+
+// var OBJ_TYPE = {
+// 	SPRITE:1,
+// 	TEXT:2,
+// 	SHAPE:3,
+// 	BACKGROUND:4,
+// };
+
+// var PA_TYPE = {
+// 	MOVE:1, //x,y
+// 	SCALE:2,//x,y
+// 	ROTATE:3,//degree
+// 	TINT:4,//endColor
+// 	OPACITY:6,//endOpacity
+// 	//-------- ADVANCED ANIMATIONS, WILL BE IMPLEMENTED LATER
+// 	CHANGE_TEXTURE:5,//texture
+// 	JUMP:7,//x,y,height,times
+// 	BLINK:8,//times
+// };
+
+var AI_CONST = {
+	HOVER_COLOR:0xF1C40F,
+	ITEM_COLOR:0x4E4E4E,
+	SELECTION_COLOR:0x22FF06,
+
+	MOVE_COLOR:0xC0392B,//pomegrante
+	SCALE_COLOR:0x6D6F02,//olive
+	ROTATE_COLOR:0x16A085,//greensea
+	TINT_COLOR:0xD35400,//pupkin
+	OPACITY_COLOR:0x7F8C8D,//asbestor
+	
+	MOVE_START:1,
+	MOVE_DRAG:2,
+	MOVE_END:3,
+	MOVE_OUTSIDE:4,
+
+	RESIZER_AREA_WIDTH:5,
+};
+
+// var TL_CONST = {
+// 	MAX_LENGTH_IN_SEC : 10,
+// 	WIDTH_OF_SEC_IN_PX : 100,
+// 	RULE_HEIGHT_IN_PX : 25,
+// 	TIMELINE_HEIGHT_IN_PX : 512,
+// 	CANVAS_COLOR:0x191919,
+// 	LINE_COLOR:0x7F8C8D,
+// 	MARKER_COLOR:0xFF8000,
+// 	LINE_COLOR_STR:'#7F8C8D',
+// 	CANVAS_WIDTH_IN_PX:1004,
+// 	ITEM_HEIGHT_IN_PX:30,
+// 	MIN_EVENT_LENTH_IN_MSEC:100
+// };
+
+// TL_CONST.MAX_WIDTH_IN_PX = TL_CONST.MAX_LENGTH_IN_SEC * TL_CONST.WIDTH_OF_SEC_IN_PX;
+// TL_CONST.WIDTH_OF_MSEC_IN_PX = TL_CONST.WIDTH_OF_SEC_IN_PX/1000;
+// TL_CONST.MAX_LENGTH_IN_MSEC = TL_CONST.MAX_LENGTH_IN_SEC*1000;

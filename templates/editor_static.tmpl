@@ -1,0 +1,1124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>YAM Editor</title>
+	<meta name="Description" content="" />
+	<meta name="Keywords"  content="" />
+
+<!-- FONT DEFINTIONS -->
+	<!-- Arial -->
+	<!-- font-family: 'NimbusSansLRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/nimbus-sans-l" type="text/css"/>
+	<!-- Calibri -->
+	<!-- font-family: 'CarlitoRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/carlito" type="text/css"/>
+	<!-- Courier -->
+	<!-- font-family: 'CousineRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cousine" type="text/css"/>
+	<!-- Comic -->
+	<!-- font-family: 'ComicReliefRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/comic-relief" type="text/css"/>
+	<!-- Garamond -->
+	<!-- font-family: 'CormorantRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/cormorant" type="text/css"/>
+	<!-- Helvetica -->
+	<!-- font-family: 'AileronRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/aileron" type="text/css"/>
+	<!-- Monospace -->
+	<!-- font-family: 'AnkaCoderRegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/anka-coder" type="text/css"/>
+	<!-- Times New Roman -->
+	<!-- font-family: 'LinuxLibertineORegular'; -->
+	<link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/linux-libertine" type="text/css"/>
+
+	<link rel="stylesheet" type="text/css" href="css/yam_fonts.css"/>
+<!-- FONT DEFINTIONS -->
+
+<!-- dynamic js loading
+<script>
+  var js = ["scripts/jquery.dimensions.js", "scripts/shadedborder.js", "scripts/jqmodal.js", "scripts/main.js"];
+  for (var i = 0, l = js.length; i < l; i++) {
+    document.getElementsByTagName("head")[0].innerHTML += ("<script src=\"" + js[i] + "\"></scr" + "ipt>");
+  }
+</script>	
+-->
+
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.min.css"/>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/front-to-back.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+
+ 	<script type="text/javascript" src="lib/pixi.js"></script>
+	<script type="text/javascript" src="lib/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="lib/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="lib/bootstrap.min.js"></script>
+	<!-- // <script type="text/javascript" src="lib/bootstrap.js"></script> -->
+
+
+
+
+
+
+
+	
+	<link rel="stylesheet" type="text/css" href="css/jqtree.css" />
+
+	<link rel="stylesheet" type="text/css" href="css/yam_form.css" />
+	<link rel="stylesheet" type="text/css" href="css/yam_range.css" />
+	<link rel="stylesheet" type="text/css" href="css/yam_checkbox.css" />
+	<link rel="stylesheet" type="text/css" href="css/yam_timeline.css" />
+
+	<!-- // <script type="text/javascript" src="lib/fetch.js"></script> -->
+
+	<script type="text/javascript" src="lib/farbtastic.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/farbtastic.css"/>
+
+	<script type="text/javascript" src="lib/caman.full.js"></script>
+	<script type="text/javascript" src="lib/instagram.js"></script>
+
+	<script type="text/javascript" src="lib/yam_colorpicker.js"></script>
+	<script type="text/javascript" src="lib/yam_colorpicker_palettes.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/yam_colorpicker.css" />
+	<link rel="stylesheet" type="text/css" href="css/jquery.gradientPicker.css" />
+	<script src="lib/jquery.gradientPicker.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="css/yam_editor.css" />
+	<link rel="stylesheet" type="text/css" href="css/yam_image_editor.css" />
+	<link rel="stylesheet" type="text/css" href="css/yam_upload.css" />
+
+	<script type="text/javascript" src="lib/tree.jquery.js"></script>
+
+
+	<!-- // <script type="text/javascript" src="lib/pixi.js"></script> -->
+	<script type="text/javascript" src="lib/dat.gui.js"></script>
+	<!-- <script type="text/javascript" src="lib/fastclick.js"></script> -->
+
+	<!-- <script type="text/javascript" src="lib/vue.min.js"></script> -->
+	<script type="text/javascript" src="lib/vue.js"></script>
+
+	<script type="text/javascript" src="lib/tweenjs-NEXT.combined.js"></script>
+
+	<script type="text/javascript" src="lib/webfontloader.js"></script>
+	<script type="text/javascript" src="lib/curve_calc.min.js"></script>
+
+	<script type="text/javascript" src="lib/jquery.knob.js"></script>
+
+	<!-- jQuery File Upload Dependencies -->
+	<script type="text/javascript" src="lib/jquery.ui.widget.js"></script>
+	<script type="text/javascript" src="lib/jquery.iframe-transport.js"></script>
+	<script type="text/javascript" src="lib/jquery.fileupload.js"></script>
+	<!-- jQuery WebUI Popover Dependencies -->
+	<!-- <link rel="stylesheet" type="text/css" href="css/jquery.webui-popover.min.css" /> -->
+	<!-- // <script type="text/javascript" src="lib/jquery.webui-popover.min.js"></script> -->
+
+	<!-- socket.io Client Dependencies -->
+	<script src="https://cdn.socket.io/socket.io-1.4.3.js"></script>
+
+    <!-- // <script type="text/javascript" src="lib/jquery.unevent.js"></script> -->
+	<link rel="stylesheet" type="text/css" href="css/yam_video.css" />
+
+</head>
+
+<template id="common-properties-template">
+	<div class="yam-row">
+		<div class="yam-10">&nbsp;</div>
+		<input type='name' rows="4" class="yam-80 yam-text" v-model="pm.name">
+	</div>
+	<div class="yam-row-sm">
+		<div class="yam-10">&nbsp;</div>
+		<div class="yam-80">
+			<a v-on:click="" href="javascript:void(0)"><i class="icon-send-back"> </i></a>
+			<a v-on:click="" href="javascript:void(0)">&nbsp;<i class="icon-bring-front"> </i></a>
+		</div>
+	</div>
+</template>
+
+<template id="text-properties-template">
+	<div class="yam-property-panel">
+		<div class="yam-row yam-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">TextFx</div>
+		</div>
+
+	<div class="yam-row">
+		<div class="yam-10">&nbsp;</div>
+		<div class="yam-label yam-25">Name</div>
+		<input type='name' rows="4" style="width:85px;float: left;" class="yam-text" v-model="pm.name">
+		<a v-on:click="$root.sendBack()" href="javascript:void(0)">&nbsp;&nbsp;<i class="icon-send-back yam-label"> </i></a>
+		<a v-on:click="$root.bringToFront()" href="javascript:void(0)">&nbsp;<i class="icon-bring-front yam-label"> </i></a>
+		<a v-on:click="$root.deleteObject()" href="javascript:void(0)">&nbsp;<i class="fa fa-trash-o yam-label"> </i></a>
+	</div>
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/txt_txt_p.png">
+			</div>
+			<!-- <div class="yam-15">&nbsp;</div> -->
+			<div class="yam-title yam-60">Text</div>
+		</div>
+		<div class="yam-row-sm">
+			<div class="yam-10">&nbsp;</div>
+			<div class="yam-80">
+			Align&nbsp; 
+				<a v-on:click="align('left')" href="javascript:void(0)">&nbsp;<i class="fa fa-align-left"> </i></a>
+				<a v-on:click="align('center')" href="javascript:void(0)">&nbsp;<i class="fa fa-align-center"> </i></a>
+				<a v-on:click="align('right')" href="javascript:void(0)">&nbsp;<i class="fa fa-align-right"> </i></a>
+			</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-10">&nbsp;</div>
+			<textarea class="yam-80 yam-text" name="textarea" rows="4" v-model="pm.text"></textarea>
+			<!-- <input type='text' rows="4" class="yam-80" v-model="pm.text"> -->
+		</div>
+		<div class="yam-row">
+			<div class="yam-10">&nbsp;</div>
+			<a v-on:click="" href="javascript:void(0)">&nbsp;<i class="fa fa-keyboard-o"></i></a>
+		</div>
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/txt_size.png">
+			</div>
+			<div class="yam-title yam-30">Font Size</div>
+			<div class="yam-10">&nbsp;</div>
+			<div class="yam-title yam-30">Family</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.fontSize" min="8" max="1024">
+			<div class="yam-10">&nbsp;</div>
+			<select class="yam-select yam-25" v-model="pm.fontName">
+			  <option>Arial</option> 
+			  <option>Verdana</option>
+			</select>			
+			<div class="yam-label" >&nbsp;<i v-on:click="editTextFont()" class="fa fa-ellipsis-h"> </i></div>
+			<!-- <div class="btn btn-primary btn-sm yam-30" @click="editTextFont()">Select Font</div> -->
+			<!-- <input type='text' class="yam-30" value="Lucida Grande"> -->
+		</div>
+
+
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/txt_fill.png">
+				<!-- <img class="yam-header-img" src="assets/txt_fill.png"> -->
+			</div>
+			<div class="yam-title yam-60">Fill Mode</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="1" v-model="pm.fillMode" class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">Solid</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.fillColor" id="txt_color_fill_solid"><div id="cp_txt_color_fill_solid"></div>			
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="2" v-model="pm.fillMode" class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">Gradient</div>
+			<div id="gp_txt_gradient" class="yam-30 yam-gradient"></div>
+		</div>
+		<!-- GRADIENT STYLE -->
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Style</div>
+			<select class="yam-select yam-25" v-model="pm.gradientStyle">
+			  <option value="1">Radial</option> 
+			  <option value="2" selected>Linear</option>
+			</select>			
+			<div v-show="pm.gradientEditing" class="yam-label" >&nbsp;<i v-on:click="pm.setGradientEditingTo(false)" class="fa fa-toggle-on"> </i></div>
+			<div v-show="!pm.gradientEditing" class="yam-label" >&nbsp;<i v-on:click="pm.setGradientEditingTo(true)" class="fa fa-toggle-off"> </i></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<!-- <input type="radio" value="3" v-model="pm.fillMode"  class="yam-radio"> -->
+				<input type="checkbox" v-model="pm.isCutOut" class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Cut-out</div>
+			<!-- <input type='text' class="yam-color yam-30" value="#00ff00" id="txt_color_cut_out"><div id="cp_txt_color_cut_out"></div> -->
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="0" v-model="pm.fillMode"  class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">None</div>
+		</div>
+
+		<!-- <div class="yam-separator"></div> -->
+
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/txt_stroke.png">
+			</div>
+			<div class="yam-title yam-60">Outline</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="checkbox" v-model="pm.drawOutline" class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Color</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.outlineColor" id="txt_color_outline"><div id="cp_txt_color_outline"></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Thickness</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.outlineThickness" min="1" max="128">
+		</div>
+
+		<!-- <div class="yam-separator"></div> -->
+
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/txt_shadow.png">
+			</div>
+			<div class="yam-title yam-60">Shadow</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="checkbox" v-model="pm.dropShadow" class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Drop</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.dropShadowColor" id="txt_color_shadow"><div id="cp_txt_color_shadow"></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Blurr</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowBlur" min="1" max="256">
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Distance</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowDistance" min="0" max="512">
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Angle</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowAngle" min="0" max="359">
+		</div>
+	</div>
+</template>
+
+<template id="shape-properties-template">
+	<div class="yam-property-panel">
+		<div class="yam-row yam-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">ShapeFx</div>
+		</div>
+
+		<div class="yam-row">
+			<div class="yam-10">&nbsp;</div>
+			<div class="yam-label yam-25">Name</div>
+			<input type='name' rows="4" style="width:85px;float: left;" class="yam-text" v-model="pm.name">
+			<a v-on:click="$root.sendBack()" href="javascript:void(0)">&nbsp;&nbsp;<i class="icon-send-back yam-label"> </i></a>
+			<a v-on:click="$root.bringToFront()" href="javascript:void(0)">&nbsp;<i class="icon-bring-front yam-label"> </i></a>
+			<a v-on:click="$root.deleteObject()" href="javascript:void(0)">&nbsp;<i class="fa fa-trash-o yam-label"> </i></a>
+		</div>
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/shape-shapes.png">
+				<!-- <img src="assets/txt_fill_p.png"> -->
+			</div>
+			<div class="yam-title yam-60">Fill Mode</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="1" v-model="pm.fillMode" class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">Solid</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.fillColor" id="shp_color_fill_solid"><div id="cp_shp_color_fill_solid"></div>			
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="2" v-model="pm.fillMode" class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">Gradient</div>
+			<div id="gp_shp_gradient" class="yam-30 yam-gradient"></div>
+		</div>
+		<!-- GRADIENT STYLE -->
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Style</div>
+			<select class="yam-select yam-25" v-model="pm.gradientStyle">
+			  <option value="1">Radial</option> 
+			  <option value="2" selected>Linear</option>
+			</select>			
+			<div v-show="pm.gradientEditing" class="yam-label" >&nbsp;<i v-on:click="pm.setGradientEditingTo(false)" class="fa fa-toggle-on"> </i></div>
+			<div v-show="!pm.gradientEditing" class="yam-label" >&nbsp;<i v-on:click="pm.setGradientEditingTo(true)" class="fa fa-toggle-off"> </i></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="radio" value="0" v-model="pm.fillMode" class="yam-radio">
+			</div>
+			<div class="yam-label yam-30">None</div>
+		</div>
+
+		<!-- <div class="yam-separator"></div> -->
+
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/shape-outline.png">
+			</div>
+			<div class="yam-title yam-60">Outline</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="checkbox" v-model="pm.drawOutline" class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Color</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.outlineColor" id="shp_color_outline"><div id="cp_shp_color_outline"></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Thickness</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.outlineThickness" min="1" max="128">
+		</div>
+
+		<!-- <div class="yam-separator"></div> -->
+
+		<div class="yam-row yam-header">
+			<div class="yam-15">
+				<img class="yam-header-img" src="assets/shape-shadow.png">
+			</div>
+			<div class="yam-title yam-60">Shadow</div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="checkbox" v-model="pm.dropShadow" class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Drop</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.dropShadowColor" id="shp_color_shadow"><div id="cp_shp_color_shadow"></div>
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Blurr</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowBlur" min="1" max="256">
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Distance</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowDistance" min="0" max="512">
+		</div>
+		<div class="yam-row">
+			<div class="yam-25">&nbsp;</div>
+			<div class="yam-label yam-30">Angle</div>
+			<input type='range' class="yam-range yam-30" v-model="pm.dropShadowAngle" min="0" max="359">
+		</div>
+	</div>
+</template>
+
+<template id="image-properties-template">
+	<div class="yam-f-property-panel">
+		<div class="yam-f-row yam-f-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">StickerFx</div>
+		</div>
+
+		<div class="yam-f-row">
+			<div class="yam-10">&nbsp;</div>
+			<div class="yam-label yam-25">Name</div>
+			<input type='name' rows="4" style="width:85px;float: left;" class="yam-text" v-model="pm.name">
+			<a v-on:click="$root.sendBack()" href="javascript:void(0)">&nbsp;&nbsp;<i class="icon-send-back yam-label"> </i></a>
+			<a v-on:click="$root.bringToFront()" href="javascript:void(0)">&nbsp;<i class="icon-bring-front yam-label"> </i></a>
+			<a v-on:click="$root.deleteObject()" href="javascript:void(0)">&nbsp;<i class="fa fa-trash-o yam-label"> </i></a>
+		</div>
+		<!-- <div class="yam-separator"></div> -->
+
+		<div class="yam-f-row yam-f-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">Tint</div>
+		</div>
+		<div class="yam-f-row">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-10">
+				<input type="checkbox" v-model="pm.paintTint"  class="yam-checkbox">
+			</div>
+			<div class="yam-label yam-30">Color</div>
+			<input type='text' class="yam-color yam-30" v-model="pm.tintColor" id="img_color_tint"><div id="cp_img_color_tint"></div>
+		</div>
+		<div class="yam-f-row yam-f-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">Filters</div>
+		</div>
+		<div class="yam-f-scroll">
+			<div class="yam-f-row">
+				<div class="yam-5">&nbsp;</div>
+				<div class="yam-10">
+					<input type="radio" value="original" v-model="pm.presetMode" class="yam-radio">
+				</div>
+				<a class='preset-col90 text-center' v-on:click="applyPreset('original')" href="javascript:void(0);">
+					<img class="yam-preview-img" src="images/sample_small.jpg">
+					<p class="yam-title yam-90">Original</p>
+				</a>
+
+			</div>
+
+			<div v-for='preset in presets' class="yam-f-row">
+				<div class="yam-5">&nbsp;</div>
+				<div class="yam-10">
+					<input type="radio" value="{{preset.name}}" v-model="pm.presetMode" class="yam-radio">
+				</div>
+				<a class='preset-col90 text-center' v-on:click="applyPreset(preset.name)" href="javascript:void(0);">
+					<img class="yam-preview-img" src="images/sample_small.jpg" data-caman="{{preset.name}}()">
+					<p class="yam-title yam-90">{{preset.label}}</p>
+				</a>
+
+			</div>
+		</div>
+		<!-- 
+		<div class="yam-f-row yam-f-header">
+			<div class="yam-10">&nbsp;</div>
+			<div class="yam-title yam-80">Extended Editing</div>
+		</div>
+		 -->
+		<!-- <div class="yam-f-row"> -->
+			<div class="btn btn-primary btn-sm" style="margin:10px;height:20px" @click="editTexture()">Open in Image Editor</div>
+		<!-- </div> -->
+	</div>
+</template>
+
+<template id="background-properties-template">
+	<div class="yam-f-property-panel">
+		<div class="yam-f-row yam-f-header">
+			<div class="yam-15">&nbsp;</div>
+			<div class="yam-title yam-60">Background</div>
+		</div>
+		<div class="yam-f-scroll">
+			<div class="background-items">
+				<ul>
+					<li v-for="bgi in pm.backgroundItems" v-bind:class="{'background-item': bgi.itemKind === 0 || bgi.itemKind === 2, 'timeline-transition':bgi.itemKind === 1}">
+	             		<div class="date">
+	                  		<span>{{bgi.length|round_length}}s</span>
+	              		</div>
+	              		<div v-if="bgi.itemKind === 0"> <!-- image -->
+	              			<img v-bind:src="bgi.url">
+							<i style="float:left;margin-top: 2px;color:white;" class="fa fa-clock-o"> </i>
+							<input type='range' style="float:left;width:60px;margin-top: 8px;" class="yam-range" min="0" max="10" step="0.1" v-model="bgi.length">
+							<a style="float:right;" v-on:click="removeBackgroundItem($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-minus-circle"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemDown($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-down"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemUp($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-up"> </i></a>
+	              		</div>
+	              		<div v-if="bgi.itemKind === 2"> <!-- video -->
+	              			<img v-bind:src="bgi.url">
+	              			<div v-show="bgi.progress < 100">
+	              				<i class="yam-progress fa fa-circle-o-notch fa-spin"> &nbsp;</i>
+	              				<div class="yam-progress-title">{{bgi.progress}}%</div>
+	              			</div> 
+							<a v-show="bgi.progress === 100"style="float:left;" v-on:click="editVideo($index)" href="javascript:void(0)"><i class="fa fa-scissors"> </i></a>
+
+							<a style="float:right;" v-on:click="removeBackgroundItem($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-minus-circle"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemDown($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-down"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemUp($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-up"> </i></a>
+	              		</div>
+	              		<div v-if="bgi.itemKind === 1"> <!-- transition -->
+							<i style="float:left;margin-top: 2px;color:white;" class="fa fa-clock-o"> </i>
+							<input type='range' style="float:left;width:60px;margin-top: 8px;" class="yam-range" min="0" max="10" step="0.1" v-model="bgi.length">
+							<a style="float:left;" href="javascript:void(0)">&nbsp;<i class="fa fa-adjust">&nbsp;Fade &nbsp;</i></a>
+							<a style="float:right;" v-on:click="removeBackgroundItem($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-minus-circle"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemDown($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-down"> </i></a>
+							<a style="float:right;" v-on:click="moveBackgroundItemUp($index)" href="javascript:void(0)">&nbsp;<i class="fa fa-arrow-circle-up"> </i></a>
+	              		</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<div class="yam-f-row yam-f-buttons-row">
+			<a v-on:click="addSeparator()" href="javascript:void(0)">&nbsp;<i class="fa fa-plus-circle">&nbsp;Add transition &nbsp;</i></a>
+		</div>
+		<!-- <form id="upload" method="post" action="/api/uploads" enctype="multipart/form-data"> -->
+		<form id="upload" method="post" enctype="multipart/form-data">
+			<!-- <input type="hidden" name="slot_s" value="secret"> -->
+			<div id="drop">
+				Drop Here <a>Or Browse</a>
+				<input type="file" name="upl" multiple />
+			</div>
+
+			<ul>
+				<!-- The file uploads will be shown here -->
+			</ul>
+
+		</form>
+	</div>
+</template>
+
+<template id="imageeditor-template">
+  <div class="modal-mask" v-show="showImageEditor" transition="modal">
+	<div v-cloak class="modal-wrapper">
+	  <div class="imageeditor-container">
+	  <div class="imageeditor-header">
+		<h3>Image Editor</h3>
+	  </div>
+	  <div class="imageeditor-body">
+			<div id = 'image_editor_canvas_holder' class='imageeditor-body-canvas'>
+			</div>
+			<div class='imageeditor-body-tools'>
+			  <ul class="nav nav-sm nav-tabs nav-justified" role="tablist">
+			    <li role="presentation" class="active"><a href="#presets" aria-controls="presets" role="tab" data-toggle="tab">Presets</a></li>
+			    <li role="presentation"><a href="#effects" aria-controls="effects" role="tab" data-toggle="tab">Effects</a></li>
+			    <li role="presentation"><a href="#custom" aria-controls="custom" role="tab" data-toggle="tab">Custom</a></li>
+			  </ul>
+			  <div class="tab-content">
+
+			    <div role="tabpanel" class="tab-pane active" id="presets">
+			    	<div class='col-md-12 preset-col100'>
+ 							<button v-on:click="executeThis('reset')" type="button" class="preset-button btn btn-success btn-sm btn-block">Reset Image</button>
+ 						</div>
+ 						<div class='col-md-12 preset-col100' style="height:530px; overflow-y:auto;">
+	 						<a v-for='preset in presets' class='preset-col90 text-center' v-on:click="executeThis(preset.name)" href="javascript:void(0);">
+								<img class="img-thumbnail" src="images/sample_small.jpg" data-caman="{{preset.name}}()">
+								<p class="controll-label">{{preset.label}}</p>
+							</a>
+						</div>
+ 			    </div>
+
+			    <div role="tabpanel" class="tab-pane" id="effects">
+			    	<div class='col-md-12 preset-col100'>
+ 							<button v-on:click="executeThis('reset')" type="button" class="preset-button btn btn-success btn-sm btn-block">Reset Image</button>
+ 						</div>
+ 						<!-- <div v-for='effect in effects'> -->
+ 						<div class='col-md-12 preset-col100' style="height:530px; overflow-y:auto;">
+	 						<a v-for='effect in effects' class='preset-col90 text-center' v-on:click="executeThis(effect.name,effect.param)" href="javascript:void(0);">
+								<img class="img-thumbnail" src="images/sample_small.jpg" data-caman="{{effect.name}}('{{effect.param}}')">
+								<p class="controll-label">{{effect.label}}</p>
+							</a>
+						</div>
+ 			    </div>
+
+			    <div role="tabpanel" class="tab-pane" id="custom">
+			    	<div class='col-md-12 preset-col100'>
+ 							<button v-on:click="executeThis('reset')" type="button" class="preset-button btn btn-success btn-sm btn-block">Reset Image</button>
+ 						</div>
+			    	<div v-for="control in controls">
+					    <div v-if="control.style == 'range'" class='preset-col45 controll-label'>
+								{{control.label}}
+					    </div>
+					    <div v-if="control.style == 'range'" class='preset-col45'>
+								<input class="imageeditor-range" type="range" min="{{control.min}}" max="{{control.max}}" step="{{control.step}}" v-model="customParamters[control.name]" lazy>
+					    </div>
+					  </div>
+					  
+			    	<div v-show="!cropIsOn" class='preset-col100'>
+ 							<button v-on:click="executeThis('startCrop')" type="button" class="preset-button btn btn-info btn-sm btn-block">Start Crop</button>
+ 						</div>
+			    	<div v-show="cropIsOn" class='preset-col45'>
+ 							<button v-on:click="executeThis('doCrop')" type="button" class="preset-button btn btn-danger btn-sm btn-block">Crop</button>
+ 						</div>
+			    	<div v-show="cropIsOn" class='preset-col45'>
+ 							<button v-on:click="executeThis('stopCrop')" type="button" class="preset-button btn btn-warning btn-sm btn-block">Cancel</button>
+ 						</div>
+
+				    <div class='preset-col45 controll-label'>
+							Scale
+				    </div>
+				    <div class='preset-col45'>
+							<input class="imageeditor-range" type="range" min="0.01" max="4" step="0.1" v-model="scale" lazy>
+				    </div>
+
+				    </div>
+
+			  </div>
+			</div>
+		  </div>
+		  <div class="imageeditor-footer">
+			<button v-on:click="showImageEditor = false" type="button" class="btn btn-default btn-sm modal-default-button">Cancel</button>
+			<button v-on:click="saveImage()" type="button" class="btn btn-primary btn-sm modal-default-button">OK</button>
+		  </div>
+	  </div>
+	</div>
+  </div>
+</template>
+
+<template id='fontgrid-template'>
+	<div class='fontlist-items-container' v-show='fontsBrowsing'>
+		<span v-for='font in currentPage'>
+			<link v-if="isGoogle" rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family={{font.family|spaceless}}'>
+			<div class='fontlist-item'>
+				<div style='font-family: "Arial"; font-size: 10px;'>{{font | fontname}}</div>
+				<div class='text-center' >
+					<a v-if="font.variants.length > 1" v-on:click='showFont(font)' href='javascript:void(0)' class='font-variant' style='font-family: {{font.family}}; font-size: 24px;'>{{font | fontsample}}</a>
+					<a v-if="font.variants.length === 1" v-on:click='selectFont(font,font.variants[0])' href='javascript:void(0)' class='font-variant' style='font-family: {{font.family}}; font-size: 24px;'>{{font | fontsample}}</a>
+				</div>
+			</div>
+ 		</span>
+<!--
+ 			<a v-if="font.variants.length > 1" v-on:click='showFont(font)' href='javascript:void(0)' class='fontlist-item' style='font-family: {{font.family}}; font-size: 24px;'>{{font | fontname}}</a>
+			<a v-if="font.variants.length === 1" v-on:click='selectFont(font,font.variants[0])' href='javascript:void(0)' class='fontlist-item' style='font-family: {{font.family}}; font-size: 24px;'>{{font | fontname}}</a>
+
+ -->		
+	</div>
+	<div class='fontlist-items-container' v-show='!fontsBrowsing'>
+		<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family={{selectedFont.family|spaceless}}{{selectedFont.variants|cssurl}}'>
+			<span v-for='variant in selectedFont.variants'>
+				<div class='fontstyle-item'>
+					<div style='font-family: "Arial"; font-size: 10px;'>{{variant}}</div>
+					<div class='text-center' >
+					<a v-on:click='selectFont(selectedFont,variant)' href='javascript:void(0)' class='font-variant' style='font-family: {{selectedFont.family}}; font-size: 24px; {{variant|fontstyle}}' >
+						{{selectedFont | fontsample}}
+					</a>
+				</div>
+			</div>
+		</span>
+	</div>
+ 	<nav class='text-center' v-show='fontsBrowsing'>
+        <ul class='pagination pagination-xs'>
+          <li>
+            <a href='#' aria-label='Previous' v-on:click='prev()'>
+              <span aria-hidden='true'>&laquo;</span>
+            </a>
+          </li>
+          <li v-for='pc in pageCount' v-bind:class='{active: isCurrent($index)}'><a href='#' v-on:click='this.page = $index'>{{pc+1}}</a></li>
+          <li>
+            <a href='#' aria-label='Next' v-on:click='next()'>
+              <span aria-hidden='true'>&raquo;</span>
+            </a>
+          </li>
+        </ul>
+ 	</nav>
+</template>
+
+<template id='fontselector-template'>
+	<div class='modal-mask' v-show='show' transition='modal'>
+		<div class='modal-wrapper'>
+			<div class='fontlist-container'>
+				<div class='assetlist-header' v-show='fontsBrowsing'>
+					<input type='text' class='form-control assetlist-header-item assetlist-header-search' placeholder='Search' v-model='filterKey'>
+
+<div class="btn-group" role="group" aria-label="...">
+<button v-for="fonts in fontsArray" v-on:click="selectedGroup = $index" type="button" v-bind:class="{ 'btn-success': selectedGroup == $index, 'btn-default': selectedGroup != $index}" class="btn btn-sm">{{fonts.group}}</button>
+</div>
+<!-- 
+<div class="btn-group" role="group" aria-label="...">
+  <button type="button" class="btn btn-sm btn-default">Left</button>
+  <button type="button" class="btn btn-sm btn-default">Middle</button>
+  <button type="button" class="btn btn-sm btn-default">Right</button>
+</div>
+ -->
+					<!-- <button v-for="fonts in fontsArray" v-on:click="selectedGroup = $index" type="button" v-bind:class="{ 'btn-success': selectedGroup == $index, 'btn-default': selectedGroup != $index}" class="btn btn-sm assetlist-header-item">{{fonts.group}}</button> -->
+				</div>
+				<!-- <fontgrid v-for="fonts in fontsArray" :fonts="fonts.items" :filterKey="filterKey" :fontsBrowsing="fontsBrowsing" v-if="$index == selected"></fontgrid> -->
+				<span v-for="fonts in fontsArray">
+					<fontgrid v-if="$index == selectedGroup" 
+						:fonts="fonts.items" 
+						:is-google="fonts.isGoogle" 
+						:fonts-browsing.sync="fontsBrowsing" 
+						:filter-key="filterKey" 
+						:selected-font="selectedFont"
+					></fontgrid>
+				</span>
+ 				<div class='assetlist-footer' v-show='fontsBrowsing'>
+						<button v-on:click='show = false' type='button' class='btn btn-primary btn-sm modal-default-button'>Cancel</button>
+			  	</div>
+			  	<div class='assetlist-footer' v-show='!fontsBrowsing'>
+						<button v-on:click='fontsBrowsing = true' type='button' class='btn btn-primary btn-sm modal-default-button'>Back</button>
+			  	</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="shapes-template">
+	<div class="shapes-body">
+		<div class="shape-item text-center">
+			<a href="javascript:void(0)" v-on:click="newShape('rect')">
+			<img src="assets/shape-rect.png">
+			<p>Rectangle</p>
+			</a>
+		</div>
+		<div class="shape-item text-center">
+			<a href="javascript:void(0)" v-on:click="newShape('triangle')">
+			<img src="assets/shape-triangle.png">
+			<p>Triangle</p>
+			</a>
+		</div>
+		<div class="shape-item text-center">
+			<a href="javascript:void(0)" v-on:click="newShape('circle')">
+			<img src="assets/shape-circle.png">
+			<p>Circle</p>
+			</a>
+		</div>
+		<div class="shape-item text-center">
+			<a href="javascript:void(0)" v-on:click="newShape('line')">
+			<img src="assets/shape-line.png">
+			<p>Line</p>
+			</a>
+		</div>
+	</div>
+</template>
+
+<template id="publish-template">
+	<div class="modal-mask" v-show="show" transition="modal">
+		<div v-cloak class="modal-wrapper">
+			<div class="yam-publish-panel">
+				<div class="yam-publish-header">
+					Publishing. Is It fine?
+				</div>
+				<div class="yam-publish-preview" id="publish_preview">
+				</div>
+				<div class="yam-publish-footer">
+					<button v-on:click="doCancel()" type="button" class="btn btn-default btn-sm modal-default-button">No</button>
+					<button v-on:click="doOK()" type="button" class="btn btn-primary btn-sm modal-default-button">Yes</button>
+				</div>
+			</div>		
+		</div>
+	</div>
+</template>
+
+<template id="video-editor-template">
+	<div class="modal-mask" v-show="show"><!--  transition="modal"> -->
+		<div v-cloak class="modal-wrapper">
+			<div class="yam-video-panel">
+				<video v-if="showVideo" class="yam-video-player" id="vp" preload="auto" width="1022" height="500" v-bind:src="bgi.video_src"><!--  v-bind:poster="bgi.url"> -->
+				</video>
+				<div class="yam-video-player-controls">
+					<i id="play" class="fa fa-play-circle-o"></i>
+					<i id="pause" class="fa fa-pause-circle-o"></i>
+				</div>
+				<div id="strip-wrapper" class="yam-video-strip-wrapper">
+					<div class="yam-video-strip-handlers"> 
+						<i id="video-pos" class="yam-video-position fa fa-chevron-down"></i>
+					</div>
+					<div id="strip-scroller" class="yam-video-strip-scroller">
+						<div class="strip-fs-top" v-bind:style="{ width: bgi.strip_width}"></div>
+						<img id="strip-img" v-bind:src="bgi.strip">
+						<div class="strip-fs-bottom" v-bind:style="{ width: bgi.strip_width}"></div>
+						<!-- <img src="images/test-strip.png"> -->
+					</div>
+					<div id="strip-handlers" class="yam-video-strip-handlers"> 
+						<i id="video-begin" class="yam-video-begin fa fa-step-backward"></i>
+						<!-- <i id="video-pos" class="yam-video-position fa fa-chevron-down"></i> -->
+						<i id="video-end" class="yam-video-end fa fa-step-forward"></i>
+					</div>
+				</div>
+				<div class="yam-video-footer">
+					<button v-on:click="doCancel()" type="button" class="btn btn-default btn-sm modal-default-button">Cancel</button>
+					<button v-on:click="doOK()" type="button" class="btn btn-primary btn-sm modal-default-button">OK</button>
+				</div>
+			</div>
+
+			<div>
+		 	  <div id='stat' class="yam-video-stat">....</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<template id="yamlist-template">
+  <div class="modal-mask" v-show="show" transition="modal">
+	<div class="modal-wrapper">
+	  <div class="yamlist-container">
+		  <div class="yamlist-header">
+			<h3>Select a YAM for editing</h3>
+		  </div>
+		  <div class="yamlist-body">
+			  <ul> 
+				<li v-for='yam in yams'>
+					<a href="javascript:void(0)" v-on:click="loadYam(yam.id)" class="yamlis-entry">{{yam.name}} - {{yam.created | toDateString}}</a>
+				</li>
+			  </ul>
+		  </div>
+		  <div class="yamlist-footer">
+			<button v-on:click="show = false" type="button" class="btn btn-primary btn-sm modal-default-button">Cancel</button>
+		  </div>
+	  </div>
+	</div>
+  </div>
+</template>
+
+<template id="assetlist-template">
+	<div class="assetlist-container">
+		<div class="assetlist-header">
+			<input type="text" class="form-control assetlist-header-item assetlist-header-search" placeholder="Search" v-model="searchText">
+			<button v-on:click="search()" class="btn btn-default assetlist-header-item">Search</button>
+			<div class="dropdown">
+				<button class="btn btn-default assetlist-header-item dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+					{{selectedGroup}}
+					<span class="caret"></span>
+				</button>
+				<ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+					<li v-for="group in groups"><a v-on:click=" loadGroup(group)" href="javascript:void(0)">{{group.name}}</a></li>
+				</ul>
+			</div>
+			</div>
+		<div class="assetlist-body">
+			<div v-for="asset in assets" class="col-md-10">
+				<a v-on:click=" addAsset(asset)" href="javascript:void(0)" class="thumbnail">
+					<img class="assetlist-image" v-bind:src="asset.url" v-bind:alt="asset.name">
+					<div class="caption assetlist-caption">
+						{{asset.name}}
+					</div>
+				</a>
+			</div>
+		</div>
+   	</div>
+</template>
+
+<template id="templates-template">
+	<div class="assetlist-container">
+		<div class="assetlist-body">
+			<div v-for="tmpl in templates" class="col-md-10">
+				<a v-on:click="addTemplate(tmpl)" href="javascript:void(0)" class="thumbnail template-thumbnail">
+					<img class="template-image" v-bind:src="tmpl.thumb_url" v-bind:alt="tmpl.name">
+				</a>
+			</div>
+		</div>
+   	</div>
+</template>
+
+<template id="options-template">
+	<div class="modal-mask" v-show="show" transition="modal"> -->
+		<div v-cloak class="modal-wrapper">
+			<div class="options-container">
+				<div class="form-horizontal">
+					<h3>YAM Properties</h3>
+					<hr>
+					<div class="form-group form-group-sm">
+						<label class="col-sm-2 control-label">Size</label>
+						<div class="col-sm-3">
+							<div class="btn-group">
+								<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+									{{selectedSize.title}} 
+									<span class="caret"></span>
+								</button>
+								<ul class="dropdown-menu" role="menu">
+									<li v-for="s in sizes" v-bind:class="s.class">
+										<a v-if="s.title != '' && !s.items" v-on:click="setSelectedSize($index)" href="#">{{s.title}}</a>
+										<a v-if="s.title != '' && s.items" tabindex="-1" href="#">SM:{{s.title}}</a>
+										<ul v-if="s.items" class="dropdown-menu">
+											<li v-for="ss in s.items" v-bind:class="ss.class">
+												<a v-if="ss.title != ''" v-on:click="setSelectedSize($index,s)" href="#">{{ss.title}}</a>
+											</li>
+										</ul>
+									</li>
+	 							</ul>
+							</div>
+						</div>
+						<!-- <div class="form-horizontal"> -->
+						<div class="form-inline col-sm-5">
+							<div class="form-group">
+								<input v-cloak v-model="opt.frameWidth" type="text" class="form-control" placeholder="width">
+								<label> x </label>
+								<input v-cloak v-model="opt.frameHeight" type="text" class="form-control" placeholder="height">
+							</div>
+						</div>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="inputEmail3" class="col-sm-2 control-label">Title</label>
+						<div class="col-sm-8">
+							<input v-cloak v-model="opt.name" type="text" class="form-control" placeholder="Title">
+						</div>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="inputPassword3" class="col-sm-2 control-label">Description</label>
+						<div class="col-sm-8">
+							<textarea v-cloak v-model="opt.desc" class="form-control" rows="3" placeholder="Description"></textarea>
+						</div>
+					</div>
+					<div class="form-group form-group-sm">
+						<label for="inputEmail3" class="col-sm-2 control-label">Background</label>
+						<div class="col-sm-2">
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" value="option1" checked>
+							    Transparent
+							  </label>
+							</div>
+						</div>
+						<div class="col-sm-2">
+							<div class="radio">
+							  <label>
+							    <input type="radio" name="optionsRadios" value="option2">
+							    Filled
+							  </label>
+							</div>
+						</div>
+					</div>
+					<hr>
+					<div class="options-footer">
+						<!-- <div class="col-sm-offset-8 col-sm-3"> -->
+							<button  v-on:click=" show = false" class="btn btn-primary modal-default-button">OK</button>
+						<!-- </div> -->
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</template>
+
+<body id="app">
+	<div v-show='isProgressVisible' class='progress-layer'>
+		<div class='progress-sign'>
+			Processing...
+		</div>
+	</div>
+
+	<videoeditor :show.sync="isVideoEditorVisible" :bgi="selectedBackgroundItem"></videoeditor>
+
+	<imageeditor :show-image-editor.sync="isImageEditorVisible" :image-path.sync="selectedImagePath">
+	</imageeditor>
+
+	<fontselector :show.sync="isFontListVisible">
+	</fontselector>
+
+	<yamlist :show.sync="isYamListVisible">
+	</yamlist>
+
+	<yamoptions v-cloak :show.sync="isYamOptionsVisible" :opt.sync="yamProperties"></yamoptions>
+
+	<publish v-cloak :show.sync="isYamPublisherVisible"></publish>
+	<div id="main-frame" class="yam-frame">
+		<div class="yam-row-header">
+			<div class="yam-header-button"><i v-on:click="switchExpertMode()" class="fa fa-cogs"></i></div>
+			<div class="yam-header-button"><i v-on:click="switchTimeline()" class="fa fa-clock-o"></i></div>
+			<div class="yam-header-separator"></div>
+			<div class="yam-header-button"><i v-on:click="dumpTemplate()" class="fa fa-code"></i></div>
+
+ 			<!-- <div class="yam-header-button" style="font-family: HanWangKanTang;">勘亭流繁 Kan Tan</div> -->
+
+			<div class="yam-header-spacer"></div>
+
+			<div class="yam-header-button"><i v-on:click="isYamPublisherVisible = true" class="fa fa-bullhorn"></i></div>
+			<div class="yam-header-separator"></div>
+			<div class="yam-header-button"><i v-on:click="saveYam()" class="fa fa-cloud-upload"></i></div>
+			
+			<div class="yam-header-button"><i v-on:click="isYamListVisible = true" class="fa fa-cloud-download"></i></div>
+<!-- 
+			<div class="yam-header-separator"></div>
+			<div class="yam-header-button"><i v-on:click="isYamOptionsVisible = true" class="fa fa-bars"></i></div>
+			<button v-on:click="isYamPublisherVisible = true" type="button" class="btn btn-danger btn-sm btn-header-button">Publish</button>		
+			<button v-on:click="saveYam()" type="button" class="btn btn-success btn-sm btn-header-button">Save</button>		
+			<button v-on:click="" type="button" class="btn btn-warning btn-sm btn-header-button">Close</button>		
+ -->
+
+			<div class="yam-header-separator"></div>
+			<div class="yam-header-button"><i v-on:click="isYamOptionsVisible = true" class="fa fa-bars"></i></div>
+			<div class="yam-header-separator"></div>
+			<div class="yam-header-button"><i v-on:click="toggleFullscreen()" class="fa fa-arrows-alt"></i></div>
+
+		</div>
+		<div class="yam-row-main" id="main-row">
+			<div class="yam-left-col" id="left-col">
+				<div v-show="isExpertMode" id="hierarchyTree">
+				</div>
+				<div v-show="!isExpertMode" class="panel-group" id="accordion" role="tablist" aria-multiselectable="false">
+				  <div class="panel panel-info panel-sm">
+				    <div class="panel-heading" id="textTemplates">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseText">
+				          Text templates
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseText" class="panel-collapse collapse" role="tabpanel" aria-labelledby="textTemplates">
+				      <div class="panel-body">
+				      	<templates :type="0"></templates>
+				      	<button v-on:click="newText()" type="button" class="btn btn-primary btn-sm">New</button>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="panel panel-info panel-sm">
+				    <div class="panel-heading" id="imageTemplates">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseImages">
+				          Image templates
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseImages" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				      	<templates :type="2"></templates>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="panel panel-info panel-sm">
+				    <div class="panel-heading" id="shapeTemplates">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseShapes">
+				          Shape templates
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseShapes" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+				      <div class="panel-body">
+				      	<templates :type="1"></templates>
+				      </div>
+				    </div>
+				  </div>
+
+				  <div class="panel panel-info panel-sm">
+				    <div class="panel-heading" id="headingTwo">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"><!--  aria-expanded="false" aria-controls="collapseTwo"> -->
+				          Stickers
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+				      <div class="panel-body">
+				      	<assetlist></assetlist>
+				      </div>
+				    </div>
+				  </div>
+				  <div class="panel panel-info panel-sm">
+				    <div class="panel-heading" id="headingThree">
+				      <h4 class="panel-title">
+				        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"><!--  aria-expanded="false" aria-controls="collapseThree"> -->
+				          Shapes
+				        </a>
+				      </h4>
+				    </div>
+				    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+				      <div class="panel-body">
+				      	<shapes></shapes>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+			</div>
+			<div class="yam-main-col" id="editor_canvas_holder"></div>
+			<div class="yam-right-col" id="right-col">
+				<div class="dat-gui-container" v-show="isExpertMode" id="gui-container"></div>
+				<text-properties v-show="!isExpertMode && propertyMode == 'text'" :pm="propertiesManager" v-cloak></text-properties>
+				<background-properties v-show="!isExpertMode && propertyMode == 'background'" :pm="propertiesManager"></background-properties>
+				<shape-properties v-show="!isExpertMode && propertyMode == 'shape'" :pm="propertiesManager"></shape-properties>
+				<image-properties v-show="!isExpertMode && propertyMode == 'image'" :pm="propertiesManager"></image-properties>
+			</div>
+		</div>
+		<div class="yam-row-timing">
+			<div class="yam-timing-properties">
+				<div class="yam-timing-button"><i class="fa fa-play-circle-o" v-on:click="playPause($event)"></i></div>
+				<div class="yam-header-spacer"></div>
+				<div class="yam-timing-button"><i class="fa fa-eye-slash" v-bind:class="{'is-selected':isShowingAllBgi}" v-on:click="showAllBgi()"></i></div>
+			</div>
+			<div class="yam-timing-scale" id="timing_scale_canvas_holder"></div>
+			<div class="yam-timing-properties"></div>
+		</div>
+		<div v-show="timelineVisible" class="yam-row-footer" id="footer-row">
+			<div class="yam-footer-properties">Animation Properties</div>
+			<div class="yam-footer-timeline" id="timeline_canvas_holder"></div>
+			<div class="animation-panel">
+				<div class="animation-panel-header">
+					<div class="animation-panel-item" v-for="act in timeline_actions" v-on:click="doTimelineAction($index)">
+						<div  class="animation-panel-button">
+							<div v-cloak class="animation-panel-thumb" style="background-image: url({{act.img}}); background-repeat: no-repeat; background-position: center">
+							</div>
+							<label class="animation-panel-label">{{act.label}}
+							</label>
+						</div>
+					</div>
+				</div>
+				<div class="animation-panel-content" id="timeline_gui-container"></div>
+			</div>
+		</div>
+	</div>

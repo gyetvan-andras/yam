@@ -1,0 +1,23 @@
+body {
+  font-family: Avenir, sans-serif;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+
+.left_col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }
+
+.right_col {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto; }

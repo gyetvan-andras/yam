@@ -1,5 +1,4 @@
 
-
 #Install ffmpeg on OSX with MacPorts
 ```
 sudo port install ffmpeg +gpl +postproc +lame +theora +libogg +vorbis +nonfree

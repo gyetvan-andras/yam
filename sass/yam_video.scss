@@ -1,0 +1,144 @@
+.yam-video-wrapper {
+	background-color: #444444;
+	display: table;
+	width:100%;
+	height:100%;
+	text-align:center;
+	padding:25px;
+}
+
+.yam-video-panel {
+	margin: auto;
+	padding:15px;
+	width: 1050px;
+	// height: 400px;
+	background-color: white;
+	border-radius: 5px;
+	display: table;
+	text-align:center;
+	float: center;
+}
+
+.yam-video-footer {
+	margin-top: 10px;
+	padding-top: 5px;
+	height: 30px;
+	// border-top: 1px solid #3F3F3F;
+}
+
+.yam-video-player {
+	border: 1px solid #BFBFBF;
+	border-radius: 5px;
+	background-color: #7F7F7F;
+}
+
+.yam-video-player-controls {
+	font-size: 48px;
+}
+
+.yam-video-strip-wrapper {
+	border: 1px solid #BFBFBF;
+	border-radius: 5px;
+	background-color: #7F7F7F;
+	margin: auto;
+	width: 1000px;
+	text-align:center;
+	padding-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+}
+
+.yam-video-strip-scroller {
+	width: 100%;
+	overflow-x: auto;
+	overflow-y: hidden;
+}
+
+.yam-video-stat {
+	font-size: 24px;
+	color: white;
+}
+
+.yam-video-strip-handlers {
+	width: 100%;
+	display: table;
+	text-align:left;
+	position: relative;
+}
+
+.yam-video-begin {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	font-size: 18px;
+    color:#FF7F00;
+}
+
+.yam-video-position {
+	position: absolute;
+	top: -18px;
+	left: -9px;
+	font-size: 18px;
+    color:#FF7F00;
+}
+
+.yam-video-end {
+	position: absolute;
+	top: 0px;
+	left: 990px;
+	font-size: 18px;
+    color:#FF7F00;
+}
+
+.strip-fs-bottom {
+	width:100%;
+	height: 18px;
+	background-image: url(../assets/fs_bottom.png);
+	background-repeat: repeat-x;
+}
+
+.strip-fs-top {
+	width:100%;
+	height: 20px;
+	background-image: url(../assets/fs_top.png);
+	background-repeat: repeat-x;
+}
+
+/* === PUBLISH ============================================================== */
+
+.yam-publish-panel {
+	margin: auto;
+	padding:15px;
+	width: 500px;
+	// height: 300px;
+	background-color: white;
+	border-radius: 5px;
+	display: table;
+	text-align:center;
+	float: center;
+}
+
+.yam-publish-footer {
+	margin-top: 10px;
+	padding-top: 5px;
+	// padding-right: 5px;
+	height: 30px;
+	// border-top: 1px solid #3F3F3F;
+}
+
+.yam-publish-header {
+	margin-top: 10px;
+	padding-top: 5px;
+	height: 30px;
+	line-height: 30px;
+	font-size: 28px;
+}
+
+.yam-publish-preview {
+	margin: 10px;
+}
+
+.yam-publish-progress {
+	margin: 20px;
+}

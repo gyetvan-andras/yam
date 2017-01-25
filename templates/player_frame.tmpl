@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Salute!</title>
+	<meta property="fb:app_id"             	content="{app_id}" />
+	<meta property="og:url"                	content="http://gettheyam.com:7777/api/player/{session}" />
+	<meta property="og:type"               	content="video.other" />
+	<meta property="og:video:type"         	content="text/html" />
+	<meta property="og:video:width" 		content="{width}" />
+	<meta property="og:video:height" 		content="{height}" />
+	<meta property="og:video:url"  			content="http://gettheyam.com:7777/api/player/{session}" />
+	<!-- <meta property="og:video:secure_url" 	content="https://gettheyam.com:7777/player_src.html" /> -->
+	<meta property="og:title"              	content="{title}" />
+	<meta property="og:description"        	content="{description}" />
+	<meta property="og:image"              	content="http://gettheyam.com:7777/{poster}" />
+</head>
+<body onresize="onResize()">
+	<link rel="stylesheet" type="text/css" href="css/player_src.css"/>
+	<script type="text/javascript" src="lib/pixi.js"></script>
+	<script type="text/javascript" src="lib/tweenjs-NEXT.combined.js"></script>
+	<script type="text/javascript" src="js/player.js"></script>
+	<script type="text/javascript" src="js/TweenMaker.js"></script>
+	<script type="text/javascript" src="js/PETweenableColor.js"></script>
+
+	<div id="player_holder" class="player_holder"></div>
+
+	<script type="text/javascript">
+		var holder = null;
+		var player = null;
+		function onResize() {
+			resizePlayer(false);
+	 	}
+	 	function resizePlayer(withCanvas) {
+			if(holder && player) {
+		 		var w = holder.clientWidth;
+		 		var h = holder.clientHeight;
+				// console.log("Client:"+w+" x "+h);
+				player.resize(w,h,withCanvas);
+			}
+	 	}
+		(function() {
+
+			var loader = new PIXI.loaders.Loader();
+			loader.add("yam","./published/{session}/{session}.yam");
+
+			loader.once("complete",function(loader, resources){
+				var yam = JSON.parse(resources.yam.data);
+				holder = document.getElementById("player_holder");
+				player = new PlayerEngine(holder);
+				player.loadYam(yam,function() {
+					resizePlayer(true);
+				});
+			});
+			loader.load();
+
+		})();
+	</script>
+
+</body>
+</html>

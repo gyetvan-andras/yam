@@ -1,0 +1,180 @@
+/*Chinese*/
+@font-face {
+	font-family: 'HanWangKanTang';
+	src:url('../fonts/chinese/wt034.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'KaiBold';
+	src:url('../fonts/chinese/wts11.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SimSun';
+	src:url('../fonts/chinese/simsun.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'ShinSuMedium';
+	src:url('../fonts/chinese/wt071.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YenLight';
+	src:url('../fonts/chinese/wt006.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SimHei';
+	src:url('../fonts/chinese/simhei.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'YanKai';
+	src:url('../fonts/chinese/wt064.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'GB06';
+	src:url('../fonts/chinese/wthc06.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MingBlack';
+	src:url('../fonts/chinese/wt005.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'MingLight';
+	src:url('../fonts/chinese/wt001.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SinSongThin';
+	src:url('../fonts/chinese/wts55.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Kai Medium';
+	src:url('../fonts/chinese/wp010-08.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Japanese*/
+@font-face {
+	font-family: 'Love';
+	src:url('../fonts/chinese/love.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SazanamiMincho';
+	src:url('../fonts/chinese/sazanami-mincho.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Osaka';
+	src:url('../fonts/chinese/osaka.unicode.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SanaFon';
+	src:url('../fonts/chinese/SNsanafonP.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Nagurigaki';
+	src:url('../fonts/chinese/nagurip.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sea';
+	src:url('../fonts/chinese/seap.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Moon';
+	src:url('../fonts/chinese/moon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Sword';
+	src:url('../fonts/chinese/Sword.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Heart';
+	src:url('../fonts/chinese/h-syoko.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'HeartZen';
+	src:url('../fonts/chinese/h-zen.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/*Hieroglyphic*/
+
+@font-face {
+	font-family: 'TheNileSong';
+	src:url('../fonts/hieroglyphic/The-Nile-Song.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'RosettaStone';
+	src:url('../fonts/hieroglyphic/ROSETTA STONE.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Hieroglify';
+	src:url('../fonts/hieroglyphic/Hieroglify.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Verdana';
+	src:url('../fonts/Verdana.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

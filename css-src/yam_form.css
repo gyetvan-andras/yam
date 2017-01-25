@@ -1,0 +1,280 @@
+input[type="range"] {
+  width: auto; }
+
+.yam-property-panel {
+  font: 14px 'Lucida Grande', sans-serif;
+  float: left; }
+
+.yam-property-panel .yam-row {
+  cursor: auto;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  /*background: #1a1a1a;*/
+  display: table;
+  width: 100%;
+  height: 27px;
+  vertical-align: middle;
+  color: white; }
+
+.yam-property-panel .yam-row-sm {
+  cursor: auto;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: table;
+  width: 100%;
+  vertical-align: middle;
+  color: white; }
+
+.yam-property-panel .yam-header {
+  /*padding: 0;*/
+  /*background: #597E1A;*/
+  background: #A1B7D6;
+  line-height: 20px; }
+
+.yam-property-panel .yam-separator {
+  cursor: auto;
+  overflow: hidden;
+  padding: 2px;
+  background: #16A085;
+  display: table;
+  width: 250px;
+  height: 5px;
+  vertical-align: middle;
+  border-bottom: 2px solid #2c2c2c; }
+
+.yam-num {
+  text-align: right; }
+
+.yam-color {
+  text-align: center; }
+
+.yam-title {
+  color: white;
+  text-align: center;
+  cursor: default;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  line-height: 27px;
+  /*margin-top: 6px;*/ }
+
+.yam-label {
+  color: white;
+  cursor: default;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  float: left;
+  vertical-align: middle;
+  line-height: 27px;
+  /*margin-top: 4px;*/ }
+
+select.yam-select {
+  outline: none;
+  margin-top: 5px; }
+
+div.yam-gradient {
+  margin-left: 3px;
+  margin-top: 3px; }
+
+.yam-25 {
+  width: 25%;
+  float: left; }
+
+.yam-5 {
+  width: 5%;
+  float: left; }
+
+.yam-10 {
+  width: 10%;
+  float: left; }
+
+.yam-15 {
+  width: 15%;
+  float: left; }
+
+.yam-32-px {
+  width: 32px;
+  float: left; }
+
+.yam-30 {
+  width: 30%;
+  float: left; }
+
+.yam-50 {
+  width: 50%;
+  float: left; }
+
+.yam-60 {
+  width: 60%;
+  float: left; }
+
+.yam-90 {
+  width: 90%;
+  float: left; }
+
+.yam-80 {
+  width: 80%;
+  float: left; }
+
+img.yam-header-img {
+  height: 25px;
+  /*border-radius: 4px;*/
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1px; }
+
+img.yam-preview-img {
+  /*width:180px;*/ }
+
+.yam-f-property-panel input[type=text],
+.yam-property-panel input[type=text] {
+  background: #303030;
+  color: #DAF0FC;
+  outline: none;
+  border: 0;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 4px;
+  margin-top: 3px;
+  line-height: 19px; }
+
+.yam-panel {
+  font: 14px 'Lucida Grande';
+  border: 2px solid #16A085;
+  display: table;
+  height: 400px;
+  width: 250px;
+  background: #1a1a1a;
+  margin: 5px; }
+
+.yam-panel .yam-header {
+  font: 17px bold 'Lucida Grande';
+  /*color: #ECF0F1;*/
+  color: #D35400;
+  background: #16A085;
+  vertical-align: middle;
+  padding: 4px;
+  text-align: center; }
+
+.yam-panel .yam-separator {
+  border-bottom: 2px solid #16A085;
+  margin-left: 5px;
+  margin-right: 5px;
+  padding: 2px;
+  background: #16A085;
+  width: 100%;
+  height: 1px;
+  vertical-align: middle; }
+
+.yam-panel .yam-label {
+  background: #2fa1d6;
+  color: #303030;
+  padding-left: 2px;
+  padding-right: 2px;
+  float: left;
+  border: 1px solid #2fa1d6;
+  height: 100%;
+  display: inline; }
+
+.yam-text {
+  background: #303030;
+  color: #2fa1d6;
+  outline: none;
+  resize: none; }
+
+.yam-panel input[type=text] {
+  background: #303030;
+  color: #2fa1d6;
+  outline: none;
+  height: 100%;
+  line-height: 25px;
+  padding-left: 2px;
+  padding-right: 2px;
+  border: 1px solid #2fa1d6;
+  float: left; }
+
+.yam-panel .yam-row {
+  height: 27px;
+  line-height: 27px;
+  vertical-align: middle;
+  width: 100%;
+  display: table;
+  /*padding: 2px;*/
+  /*padding-bottom: 2px;*/
+  /*position: relative;*/ }
+
+.yam-panel .yam-row-sm {
+  vertical-align: middle;
+  width: 100%;
+  display: table;
+  padding: 2px;
+  /*padding-bottom: 2px;*/
+  /*position: relative;*/ }
+
+a {
+  color: #ECF0F1;
+  text-decoration: none; }
+
+a:hover,
+a:focus {
+  color: #2980B9;
+  text-decoration: none; }
+
+a:focus {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px; }
+
+/* FLEX LAYOUT FOR IMAGE PROPERTIES */
+.yam-f-property-panel {
+  font: 14px 'Lucida Grande', sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1; }
+
+.yam-f-scroll {
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  flex: 2 2 300px; }
+
+.yam-f-row {
+  cursor: auto;
+  overflow: hidden;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  display: table;
+  width: 100%;
+  flex: 0 0 27px; }
+
+.yam-f-buttons-row {
+  width: 240px;
+  margin-left: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  cursor: auto;
+  text-align: center;
+  overflow: hidden;
+  line-height: 20px;
+  background-color: #373a3d; }
+
+.yam-f-header {
+  background: #A1B7D6;
+  line-height: 20px; }
+
+.yam-progress {
+  width: 15px;
+  height: 15px;
+  float: left;
+  color: white; }
+
+.yam-progress-title {
+  line-height: 16px;
+  color: white;
+  float: left;
+  margin-left: 4px; }
+
+/*# sourceMappingURL=yam_form.css.map */

@@ -1,0 +1,282 @@
+.cp-wrapper {
+	position: absolute;
+	width: 200px;
+	/*height: 310px;*/
+	z-index: 1500;
+	color: #eee;
+	font: 14px 'Lucida Grande', sans-serif;
+  border-left: 2px solid #d35400;
+  border-right: 2px solid #d35400;
+  border-bottom: 2px solid #d35400;
+	background: #1a1a1a;
+}
+
+.cp-tabs {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	display: table;
+  border-bottom: 2px solid #d35400;
+}
+
+.cp-tab {
+	box-sizing: border-box;
+  border-top: 2px solid #d35400;
+	width:50%;
+	float: left;
+	padding-right: 4px;
+	padding-left: 4px;
+	height: 30px;
+	line-height: 30px;
+	cursor: pointer;
+}
+
+.cp-tab.cp-active {
+	background: #d35400;
+  border-top: 0px solid #d35400;
+}
+.cp-panel {
+	display: none;
+}
+
+.cp-panel.cp-active {
+	display: block;
+}
+
+.cp-row {
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	display: table;
+}
+
+div.cp-footer {
+  border-top: 2px solid #d35400;
+	width: 100%;
+	height: 25px;
+	line-height: 25px;
+	text-align: center;
+}
+
+div.cp-footer-button {
+	margin: 4px;
+	height: 20px;
+	font-size: .7em;
+	line-height: 20px;
+	background: #008080;	
+	width:90px;
+	border-radius: 2px;
+	float:right;
+	cursor: pointer;
+}
+
+.cp-label {
+	float:left;
+	padding-left: 4px;
+	width: 15px;
+}
+
+input[type=range].cp-range {
+	width: 135px;
+}
+
+input[type=text].cp-range {
+  background: #303030;
+  color: #2fa1d6;
+  outline: none;
+  border:0;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 4px;
+  margin-top: 7px;
+	font-size: .7em;
+  line-height: .7em;
+  width:30px;
+  float:left;
+  text-align: right;
+}
+
+/** =======================================================================================================================*/
+.custom-dropdown--large {
+	font-size: 1.5em;
+}
+
+.custom-dropdown--small {
+	font-size: .7em;
+}
+
+.custom-dropdown__select{
+	font-size: inherit; /* inherit size from .custom-dropdown */
+	padding: .5em; /* add some space*/
+	margin: 0; /* remove default margins */
+	width: 185px;
+	cursor: pointer;
+}
+
+.custom-dropdown__select--white {
+	background-color: #fff;
+	color: #444;    
+}	
+
+.custom-dropdown__select--emerald {
+	background-color: #20b390;
+	color: #fff;    
+}				
+
+.custom-dropdown__select--red {
+	background-color: #d53a22;
+	color: #fff;
+}
+
+@supports (pointer-events: none) and
+		  ((-webkit-appearance: none) or
+		  (-moz-appearance: none) or
+		  (appearance: none)) {
+
+	
+	h2+p {
+		color: green; /* Demo only */
+	}
+
+	.custom-dropdown {
+		position: relative;
+		display: inline-block;
+	  outline: none;
+		vertical-align: middle;
+	}
+
+	.custom-dropdown__select {
+	  outline: none;
+		padding-right: 2.5em; /* accommodate with the pseudo elements for the dropdown arrow */				
+		border: 0;
+		border-radius: 3px;
+		appearance: none;    
+	}
+
+	.custom-dropdown::before,
+	.custom-dropdown::after {
+		content: "";
+		position: absolute;
+		pointer-events: none;
+	}
+
+	.custom-dropdown::after { /*  Custom dropdown arrow */
+		content: "\25BC";
+		height: 1em;
+		font-size: .625em;
+		line-height: 1;
+		right: 1.2em;
+		top: 50%; margin-top: -.5em;
+	}
+
+	.custom-dropdown::before { /*  Custom dropdown arrow cover */
+		width: 2em;
+		right: 0; top: 0; bottom: 0;
+		border-radius: 0 3px 3px 0;
+	}
+
+	.custom-dropdown__select[disabled] {
+		color: rgba(0,0,0,.3);
+	}
+
+	.custom-dropdown.custom-dropdown--disabled::after {
+		color: rgba(0,0,0,.1);
+	}
+
+	/* White dropdown style */
+	.custom-dropdown--white::before {
+		top: .5em; bottom: .5em;
+		background-color: #fff;
+		border-left: 1px solid rgba(0,0,0,.1);
+	}
+
+	.custom-dropdown--white::after {
+		color: rgba(0,0,0,.9);
+	}					
+
+	/* Emerald dropdown style */
+	.custom-dropdown--emerald::before {
+		background-color: #1aa181;
+	}
+
+	.custom-dropdown--emerald::after {
+		color: rgba(0,0,0,.4);
+	}
+
+
+	/* Red dropdown style */
+	.custom-dropdown--red::before {
+		background-color: #d53a22;
+	}
+
+	.custom-dropdown--red::after {
+		color: rgba(0,0,0,.4);
+	}
+
+	/* FF only temporary & ugly fixes */
+	/* the "appearance: none" applied on select still shows a dropdown arrow on Firefox */
+	/* https://bugzilla.mozilla.org/show_bug.cgi?id=649849 */
+	@-moz-document url-prefix() {
+		.custom-dropdown__select 						 { padding-right: .9em }
+		.custom-dropdown--large .custom-dropdown__select { padding-right: 1.3em }
+		.custom-dropdown--small .custom-dropdown__select { padding-right: .5em }
+	}	
+
+}
+
+.custom-dropdown {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  margin-left: 8px;
+  display: inline-block;
+  outline: none;
+}
+
+/** =======================================================================================================================*/
+
+.cp-palette-content {
+	margin-bottom: 5px;
+	margin-left: 8px;
+	margin-right: 10px;
+	/*display: box;*/
+	box-sizing: border-box;
+	height: 224px;
+	width:182px;
+	overflow: auto;
+	border: 1px solid #31302f;
+	/*float: left;*/
+}
+
+ul.cp-palette-items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  white-space: nowrap; 
+}
+
+li.cp-palette-item {
+	cursor: pointer;
+	height: 20px;
+  white-space: nowrap; 
+  float:left;
+  width:100%;
+}
+
+span.cp-palette-item-color {
+	float: left;
+	width:25px;
+	height:17px;
+	margin-top: 2px;
+	margin-left: 2px;
+	margin-right: 2px;
+  white-space: nowrap; 
+}
+
+span.cp-palette-item-label {
+	font-size: .7em;
+	/*float: left;*/
+	line-height: 20px;
+	margin-left: 2px;
+  white-space: nowrap; 
+}

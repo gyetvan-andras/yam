@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:svg="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd" xmlns:ns1="http://sozi.baierouge.fr" xmlns:xlink="http://www.w3.org/1999/xlink" id="svg4749" viewBox="0 0 713.56 800.59" version="1.1" inkscape:version="0.91 r13725">
+  <g id="layer1" transform="translate(191.37 -78.164)">
+    <g id="g4315" transform="matrix(3.8147 0 0 3.8147 -911.41 -929.26)">
+      <path id="path4286" style="fill:#000000" d="m189.3 365.01c0.57573-7.0728 1.2016-14.675 3.4515-21.457 1.1551-4.5503 3.4106-8.7096 6.0026-12.454 2.4714-3.8699 8.1778-6.1382 12.906-4.3126 3.2533 1.2939 6.0561 3.833 8.1035 6.7133 3.1524 3.6637 4.6858 8.384 7.0332 12.454 2.58 5.2257 4.0104 10.982 5.7317 16.449 2.455 12.109-0.76216 23.41-10.678 28.817-5.7092 3.4104-13.792 3.9326-20.095 1.4123-4.3846-1.6569-7.1757-5.4805-9.4207-9.3164-2.9209-5.6183-4.222-11.606-3.2662-18.123l0.23149-0.18287z"/>
+      <path id="path4282" style="fill:#000000" d="m190.17 429.23c1.8305-10.761 9.095-19.649 18.068-25.486 8.1612-5.6492 16.957-10.343 24.846-16.299 5.0561-5.6645 7.5158-13.066 12.016-19.193 7.4832-8.8846 19.856-11.395 30.947-11.981 14.204-0.51947 30.236-0.34628 41.631 9.3822 6.5878 6.4913 8.2315 16.516 15.533 22.464 6.9948 5.5855 14.891 9.5602 22.212 14.701 10.092 6.723 19.494 17.094 19.513 29.944 0.2958 10.041-3.52 19.939-8.4946 28.495-5.336 8.2918-14.886 13.359-24.779 12.629-10.358 0.13126-19.625-5.5392-29.789-6.2218-10.044 2.4158-20.507 3.8886-30.939 3.5049-9.943 0.68229-19.614-2.4005-29.261-3.4278-11.993 2.088-23.85 8.0595-36.291 5.5099-11.182-2.586-18.883-12.441-21.998-23.085-2.3944-6.5221-4.7622-13.984-3.2138-20.936z"/>
+      <path id="path4268" style="fill:#000000" d="m222.31 321.2c0.35791-8.8604 1.8491-17.553 3.9066-26.22 3.4303-11.533 7.3346-25.939 19.845-30.408 11.895-1.8783 19.499 10.821 23.57 20.379 5.7808 13.224 9.8212 27.381 11.185 41.782 0.72297 13.299-11.116 22.493-23.192 24.413-11.061 3.3232-24.427-0.33332-30.314-10.858-3.7042-5.7082-5.1121-12.919-5.0019-19.088z"/>
+      <path id="path4262" style="fill:#000000" d="m284.14 324.2c1.1101-6.749 1.7937-13.908 4.2018-20.106 0.52034-5.2025 3.5818-9.599 4.4487-14.672 2.6875-3.2749 2.4681-7.3816 5.4555-10.236 1.4416-3.251 3.3717-6.333 6.0026-9.0028 2.058-2.5262 5.0822-4.4229 8.3036-5.2088 4.6767-2.4883 9.1451 0.82347 12.705 3.1081 2.1857 1.8832 2.777 4.743 5.4345 6.2082 0.8606 3.8855 3.9668 6.8457 4.4348 10.897 2.273 5.7587 4.0007 11.943 4.7761 18.431 1.5267 6.4936 2.5916 14.161 2.462 20.581-1.1668 5.4145-1.4331 11.203-4.7833 15.73-1.4742 2.6359-4.2313 5.2373-6.3215 7.3773-5.9884 4.4778-13.609 5.4768-21.099 4.7217-5.7445-1.3549-11.24-2.4507-15.967-5.9221-3.1022-2.1185-6.0432-4.4986-7.5032-7.9525-1.9028-4.047-3.275-9.4067-2.5511-13.954z"/>
+      <path id="path4258" style="fill:#000000" d="m334.6 354.86c1.403-4.1314 2.7523-7.9758 4.7926-11.754 1.1745-3.0692 3.1565-6.1331 4.7687-9.0028 2.8038-2.6713 4.8762-5.428 8.1035-6.9022 4.8643-2.8528 10.843-0.2333 13.506 3.9012 1.9682 2.9726 3.9406 5.9384 4.9521 9.3029 2.8131 6.4674 3.5937 13.788 4.184 21.157 1.1881 5.9733 1.569 12.642-1.1827 18.156-0.86818 3.2017-2.7064 6.8156-5.8762 8.5872-2.58 4.9696-10.04 6.3248-15.554 5.7996-5.7634-0.50577-10.702-2.7707-15.485-5.5476-3.8873-3.393-6.8301-7.3969-6.0888-12.765-2.0539-6.1939 1.8712-15.268 3.8808-20.932z"/>
+    </g>
+  </g>
+  <metadata>
+    <rdf:RDF>
+      <cc:Work>
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type rdf:resource="http://purl.org/dc/dcmitype/StillImage"/>
+        <cc:license rdf:resource="http://creativecommons.org/licenses/publicdomain/"/>
+        <dc:publisher>
+          <cc:Agent rdf:about="http://openclipart.org/">
+            <dc:title>Openclipart</dc:title>
+          </cc:Agent>
+        </dc:publisher>
+        <dc:title>Cat -8</dc:title>
+        <dc:date>2010-09-20T20:02:46</dc:date>
+        <dc:description>Cat and Halloween Clip Art.</dc:description>
+        <dc:source>https://openclipart.org/detail/85927/cat--8-by-inky2010</dc:source>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>inky2010</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:subject>
+          <rdf:Bag>
+            <rdf:li>2010</rdf:li>
+            <rdf:li>Halloween</rdf:li>
+            <rdf:li>Inkscape</rdf:li>
+            <rdf:li>avatar</rdf:li>
+            <rdf:li>black</rdf:li>
+            <rdf:li>cat</rdf:li>
+            <rdf:li>clip</rdf:li>
+            <rdf:li>dark</rdf:li>
+            <rdf:li>free</rdf:li>
+            <rdf:li>halloween2010</rdf:li>
+            <rdf:li>icon</rdf:li>
+            <rdf:li>inky2010</rdf:li>
+            <rdf:li>shade</rdf:li>
+            <rdf:li>silhouette</rdf:li>
+            <rdf:li>spooky</rdf:li>
+          </rdf:Bag>
+        </dc:subject>
+      </cc:Work>
+      <cc:License rdf:about="http://creativecommons.org/licenses/publicdomain/">
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Reproduction"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#Distribution"/>
+        <cc:permits rdf:resource="http://creativecommons.org/ns#DerivativeWorks"/>
+      </cc:License>
+    </rdf:RDF>
+  </metadata>
+</svg>
