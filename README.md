@@ -23,17 +23,24 @@ The editor contains the following features:
 </div>
 ```
 ##Showcase
+
 <p align="center">
-[![ImageEditor](https://img.youtube.com/vi/50dGjxvQiRU/0.jpg)](https://www.youtube.com/watch?v=50dGjxvQiRU)
-<i>(Image Editor)</i>
+[(https://img.youtube.com/vi/50dGjxvQiRU/0.jpg)](https://www.youtube.com/watch?v=50dGjxvQiRU)
+	<p align="center">
+		<em>(Image Editor)</em>
+	</p>
 </p>
 <p align="center">
-[![TextFx](https://img.youtube.com/vi/jOHqsurtkvo/0.jpg)](https://www.youtube.com/watch?v=jOHqsurtkvo)
-<i>(TextFx)</i>
+[(https://img.youtube.com/vi/jOHqsurtkvo/0.jpg)](https://www.youtube.com/watch?v=jOHqsurtkvo)
+	<p align="center">
+		<em>(TextFx)</em>
+	</p>
 </p>
 <p align="center">
 [![Animation](https://img.youtube.com/vi/3S2YGOT7id8/0.jpg)](https://www.youtube.com/watch?v=3S2YGOT7id8)
-<i>(Animation Editor)</i>
+	<p align="center">
+		<em>(Animation Editor)</em>
+	</p>
 </p>
 
 ## Installation
