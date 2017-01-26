@@ -22,6 +22,19 @@ The editor contains the following features:
 	<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
 </div>
 ```
+##Showcase
+<p align="center">
+[![ImageEditor](https://img.youtube.com/vi/50dGjxvQiRU/0.jpg)](https://www.youtube.com/watch?v=50dGjxvQiRU)
+<i>(Image Editor)</i>
+</p>
+<p align="center">
+[![TextFx](https://img.youtube.com/vi/jOHqsurtkvo/0.jpg)](https://www.youtube.com/watch?v=jOHqsurtkvo)
+<i>(TextFx)</i>
+</p>
+<p align="center">
+[![Animation](https://img.youtube.com/vi/3S2YGOT7id8/0.jpg)](https://www.youtube.com/watch?v=3S2YGOT7id8)
+<i>(Animation Editor)</i>
+</p>
 
 ## Installation
 

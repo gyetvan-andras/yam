@@ -3,3 +3,5 @@ uploads
 logs
 .sass-cache
 yam_editor.db
+published
+yam_templates

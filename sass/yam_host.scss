@@ -1,6 +1,17 @@
 body {
 	font-family: Avenir, sans-serif;
 	display: flex;
+	flex-direction: column;
+}
+
+.title {
+	display: flex;
+	flex-direction: row;
+	flex: 0 0 auto;		
+}
+
+.content {
+	display: flex;
 	flex-direction: row;
 }
 
