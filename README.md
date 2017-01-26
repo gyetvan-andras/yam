@@ -34,14 +34,18 @@ The editor contains the following features:
 </p>
 
 <p align="center">
-[<img src="https://img.youtube.com/vi/jOHqsurtkvo/0.jpg" alt="TextFx">](https://www.youtube.com/watch?v=jOHqsurtkvo)
+	<a href="https://www.youtube.com/watch?v=jOHqsurtkvo">
+		<img src="https://img.youtube.com/vi/jOHqsurtkvo/0.jpg" alt="TextFx">
+	</a>
 	<p align="center">
 		<em>(TextFx)</em>
 	</p>
 </p>
 
 <p align="center">
-[<img src="https://img.youtube.com/vi/3S2YGOT7id8/0.jpg" alt="Animation Editor">](https://www.youtube.com/watch?v=3S2YGOT7id8)
+	<a href="https://www.youtube.com/watch?v=3S2YGOT7id8">
+		<img src="https://img.youtube.com/vi/3S2YGOT7id8/0.jpg" alt="Animation Editor">
+	</a>
 	<p align="center">
 		<em>(Animation Editor)</em>
 	</p>
