@@ -25,7 +25,9 @@ The editor contains the following features:
 ##Showcase
 
 <p align="center">
-[<img src="https://img.youtube.com/vi/50dGjxvQiRU/0.jpg" alt="Image Editor">](https://www.youtube.com/watch?v=50dGjxvQiRU)
+	<a href="https://www.youtube.com/watch?v=50dGjxvQiRU">
+		<img src="https://img.youtube.com/vi/50dGjxvQiRU/0.jpg" alt="Image Editor">
+	</a>
 	<p align="center">
 		<em>(Image Editor)</em>
 	</p>
