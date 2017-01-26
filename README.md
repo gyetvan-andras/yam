@@ -28,21 +28,28 @@ The editor contains the following features:
 [https://img.youtube.com/vi/3S2YGOT7id8/0.jpg](https://www.youtube.com/watch?v=3S2YGOT7id8)
 
 <p align="center">
-[https://img.youtube.com/vi/50dGjxvQiRU/0.jpg](https://www.youtube.com/watch?v=50dGjxvQiRU)
+	<img src="doc/sample.png" alt="Sample">
+	<p align="center">
+		<em>MLCalendarView in NSPopover</em>
+	</p>
+</p>
+
+<p align="center">
+[<img src="https://img.youtube.com/vi/50dGjxvQiRU/0.jpg"](https://www.youtube.com/watch?v=50dGjxvQiRU)
 	<p align="center">
 		<em>(Image Editor)</em>
 	</p>
 </p>
 
 <p align="center">
-[https://img.youtube.com/vi/jOHqsurtkvo/0.jpg](https://www.youtube.com/watch?v=jOHqsurtkvo)
+[<img src="https://img.youtube.com/vi/jOHqsurtkvo/0.jpg"](https://www.youtube.com/watch?v=jOHqsurtkvo)
 	<p align="center">
 		<em>(TextFx)</em>
 	</p>
 </p>
 
 <p align="center">
-[https://img.youtube.com/vi/3S2YGOT7id8/0.jpg](https://www.youtube.com/watch?v=3S2YGOT7id8)
+[<img src="https://img.youtube.com/vi/3S2YGOT7id8/0.jpg"](https://www.youtube.com/watch?v=3S2YGOT7id8)
 	<p align="center">
 		<em>(Animation Editor)</em>
 	</p>
