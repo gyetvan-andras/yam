@@ -15,12 +15,12 @@
 	<meta property="og:image"              	content="http://gettheyam.com:7777/{poster}" />
 </head>
 <body onresize="onResize()">
-	<link rel="stylesheet" type="text/css" href="css/player_src.css"/>
-	<script type="text/javascript" src="lib/pixi.js"></script>
-	<script type="text/javascript" src="lib/tweenjs-NEXT.combined.js"></script>
-	<script type="text/javascript" src="js/player.js"></script>
-	<script type="text/javascript" src="js/TweenMaker.js"></script>
-	<script type="text/javascript" src="js/PETweenableColor.js"></script>
+	<link rel="stylesheet" type="text/css" href="/css/player_src.css"/>
+	<script type="text/javascript" src="/lib/pixi.js"></script>
+	<script type="text/javascript" src="/lib/tweenjs-NEXT.combined.js"></script>
+	<script type="text/javascript" src="/js/player.js"></script>
+	<script type="text/javascript" src="/js/TweenMaker.js"></script>
+	<script type="text/javascript" src="/js/PETweenableColor.js"></script>
 
 	<div id="player_holder" class="player_holder"></div>
 
@@ -41,7 +41,7 @@
 		(function() {
 
 			var loader = new PIXI.loaders.Loader();
-			loader.add("yam","./published/{session}/{session}.yam");
+			loader.add("yam","/published/{session}/{session}.yam");
 
 			loader.once("complete",function(loader, resources){
 				var yam = JSON.parse(resources.yam.data);

@@ -37,9 +37,9 @@ app.use('/', express.static(__dirname))
 
 app.use('/logs',scribe.webPanel());
 
-app.use(express.static('./'));
-app.use('/editor/',express.static('./'));
-app.use('/player',express.static('./'));
+app.use(express.static(__dirname));
+app.use('/editor/',express.static(__dirname));
+app.use('/player',express.static(__dirname));
 
 http.listen(7777,function(){
     console.log("Working on port 7777");
