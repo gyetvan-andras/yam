@@ -22,7 +22,13 @@ The editor contains the following features:
 	<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
 </div>
 ```
-##Showcase - click to view
+##Take a look
+Please note that the server is running on a very limited VPS machine [ArubaCloud almost free solution](https://www.arubacloud.com/vps/technical-specs-virtual-private-server.aspx)
+
+1. [Two animations embedded into a page](http://gettheyam.com:7777/yam_host.html)
+2. [YAM Editor](http://gettheyam.com:7777/editor_shell.html) I am really sorry, but this editor deployment is just for try out purposes. You cannot add your own images, however you can use what is provided in the sticker library.
+
+##In Action - click to view
 
 <p align="center">
 	<a href="https://www.youtube.com/watch?v=50dGjxvQiRU">
