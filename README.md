@@ -64,11 +64,10 @@ To process video files YAM Server requires the following tools to operate:
 sudo apt-get install fontconfig
 ```
 #ffmpeg
-##Ubuntu
+##Ubuntu (16.04 LTS)
 ```
-sudo add-apt-repository ppa:kirillshkrogalev/ffmpeg-next
-sudo apt-get update
-sudo apt-get install ffmpeg
+sudo add-apt-repository ppa:jonathonf/ffmpeg-3
+sudo apt update && sudo apt install ffmpeg libav-tools x264 x265
 ```
 ##OSX
 ```
