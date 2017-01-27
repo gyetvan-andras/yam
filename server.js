@@ -8,6 +8,7 @@ var io 			= require('socket.io')(http);
 var scribe = require('scribe-js')({
     createDefaultConsole : false
 });
+
 var editorConsole = scribe.console({
 
     console : {   
@@ -32,6 +33,7 @@ app.use(bodyParser.urlencoded({ extended: false,limit: '150mb' }));
 app.use('/api',editor);
 
 app.use('/',pages);
+app.use('/', express.static(__dirname))
 
 app.use('/logs',scribe.webPanel());
 
