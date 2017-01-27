@@ -22,7 +22,7 @@ The editor contains the following features:
 	<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
 </div>
 ```
-##Showcase
+##Showcase - click to view
 
 <p align="center">
 	<a href="https://www.youtube.com/watch?v=50dGjxvQiRU">
@@ -46,10 +46,14 @@ The editor contains the following features:
 	<a href="https://www.youtube.com/watch?v=3S2YGOT7id8">
 		<img src="https://img.youtube.com/vi/3S2YGOT7id8/0.jpg" alt="Animation Editor">
 	</a>
+	<a href="https://www.youtube.com/watch?v=TMm1H9oVhu8">
+		<img src="https://img.youtube.com/vi/TMm1H9oVhu8/0.jpg" alt="Animation Editor">
+	</a>
 	<p align="center">
 		<em>(Animation Editor)</em>
 	</p>
 </p>
+
 
 ## Installation
 
