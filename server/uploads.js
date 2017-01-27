@@ -207,6 +207,8 @@ exports.processSlot = function(slot,res,io) {
   var shname = filename.substring(0,filename.lastIndexOf("."));
 	var uploadFolder = path.join(__dirname,'../uploads');
 	filename = path.join(uploadFolder,filename);
+	var file_url = path.join('/uploads',slot);
+
   if(slot.startsWith('video-')) {
     var command = ffmpeg(filename);
     command
@@ -232,7 +234,7 @@ exports.processSlot = function(slot,res,io) {
         size:'200x?'
       });
   } else {
-    res.send(filename);
+    res.send(file_url);
   }
 };
 
