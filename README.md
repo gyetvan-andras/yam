@@ -1,5 +1,8 @@
-# yam
-A proof of concept HTML5 Animation editor. 
+# YAM! What is this?
+It is a proof of concept HTML5 Animation editor. I have two purposes to put it here:
+
+1. if you find any piece of this code usefull, just use it as you wish
+2. I've spent several hours from my spare time to put it all together. It is a fun project for me, with a clear vision about what could it be. So if you know someone who is interested in putting some money into it, just drop me a message :) I'd like to work on it 120%!
 
 # WARNING :)
 Be aware that this repo contains some large test data, for example a test mp4 and some image. You've been warned :D
