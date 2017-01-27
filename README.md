@@ -25,6 +25,11 @@ The editor contains the following features:
 	<iframe width="100%" height="100%" frameborder="0" src="player/17c668ab-2a7c-412e-9d7f-0c707f0ef61e"></iframe>
 </div>
 ```
+
+##Browser compatibility
+The YAM Editor works well on Chrome and Safari browsers. Firefox is almost there, probably with some tweaks it can work. MS browsers (Edge, IE) are not compatible.
+The YAM Player (embedded to play the animation) is tested on Safari, Chrome, Firefox. MS browsers probably supported. I need to boot into Windows to test them.
+
 ##Take a look
 Please note that the server is running on a very limited VPS machine [ArubaCloud almost free solution](https://www.arubacloud.com/vps/technical-specs-virtual-private-server.aspx)
 
