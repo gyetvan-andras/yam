@@ -28,7 +28,7 @@ Please note that the server is running on a very limited VPS machine [ArubaCloud
 1. [Two animations embedded into a page](http://gettheyam.com:7777/yam_host.html)
 2. [YAM Editor](http://gettheyam.com:7777/editor_shell.html) I am really sorry, but this editor deployment is just for try out purposes. You cannot add your own images, however you can use what is provided in the sticker library.
 
-##In Action - click to view
+##In Action - click on images to view the videos
 
 <p align="center">
 	<a href="https://www.youtube.com/watch?v=50dGjxvQiRU">
