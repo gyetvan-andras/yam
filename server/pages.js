@@ -3,9 +3,9 @@ var fs = require('fs');
 var user = require('./user');
 var path = require('path');
 
-var editor_static = fs.readFileSync(path.join(__dirname,'templates/editor_static.tmpl'), "utf8");
-var editor_template = fs.readFileSync(path.join(__dirname,'templates/editor_dynamic.tmpl'), "utf8");
-var player_template = fs.readFileSync(path.join(__dirname,'templates/player_frame.tmpl'), "utf8");
+var editor_static = fs.readFileSync(path.join(__dirname,'../templates/editor_static.tmpl'), "utf8");
+var editor_template = fs.readFileSync(path.join(__dirname,'../templates/editor_dynamic.tmpl'), "utf8");
+var player_template = fs.readFileSync(path.join(__dirname,'../templates/player_frame.tmpl'), "utf8");
 
 var console = process.console;
 
