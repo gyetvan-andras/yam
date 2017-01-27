@@ -83,7 +83,7 @@ sudo apt-get install graphicsmagick
 ```
 sudo port install graphicsmagick
 ```
-##Steps needed to deploy a YAM from the scratch
+##Steps needed to deploy the YAM Server from the scratch
 
 1. checkout the repo
 2. cd yam
@@ -92,3 +92,4 @@ sudo port install graphicsmagick
 5. node server/init_yam_db.js
 6. node server.js
 
+Then locate the editor at http://localhost:7777/editor_shell.html
