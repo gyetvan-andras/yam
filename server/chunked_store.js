@@ -1,9 +1,11 @@
 /*jshint node:true, laxcomma:true*/
 'use strict';
 var fs = require('fs');
+var path = require('path')
 
 function ChunkedStorage () {
-  this.targetFolder = './uploads/';
+	this.targetFolder = path.join(__dirname,'../uploads/');
+	console.log('Target folder:',this.targetFolder);
 }
 
 ChunkedStorage.prototype.outputFile = function(req) {
@@ -11,7 +13,7 @@ ChunkedStorage.prototype.outputFile = function(req) {
   var slot = req.body.slot;
   var fileOut = null;
   if(slot) {
-    fileOut = self.targetFolder+slot;
+		fileOut = path.join(self.targetFolder,slot);
   }
   return fileOut;
 };

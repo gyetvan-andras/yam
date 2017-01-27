@@ -8,6 +8,7 @@ var fs      = require('fs');
 var gm      = require('gm');
 var storage = require('./chunked_store')();
 var uuid = require('node-uuid');
+var path = require('path')
 
 var _upload = multer({ 
   storage : storage,
@@ -19,9 +20,11 @@ function createThumbnailStrip(shname,callback) {
     var stderr = '';
     var stderrClosed = false;
 
+		var uploadFolder = path.join(__dirname,'../uploads');
+
     // Spawn ffprobe
     var ls = spawn('ls', [
-      './uploads',
+      uploadFolder,
     ]);
 
     ls.on('error', function(err) {
@@ -51,14 +54,14 @@ function createThumbnailStrip(shname,callback) {
         });
         var i = 0;
         if(tnfiles.length > 0) {
-          var append = gm("./uploads/"+tnfiles[0].line);
+					var append = gm(path.join(uploadFolder,tnfiles[0].line));
           for(i = 1; i < tnfiles.length;i++) {
-            append = append.append("./uploads/"+tnfiles[i].line);
+						append = append.append(path.join(uploadFolder,tnfiles[i].line));
           }
-          append.append(true).write("./uploads/"+shname+"-strip.png",function (err) {
+					append.append(true).write(path.join(uploadFolder,shname+"-strip.png"),function (err) {
             if (err) return console.dir(arguments);
             for(i = 0; i < tnfiles.length;i++) {
-              fs.unlinkSync("./uploads/"+tnfiles[i].line);
+							fs.unlinkSync(path.join(uploadFolder,tnfiles[i].line));
             }
             callback(null,"uploads/"+shname+"-strip.png",tnfiles.length*100);
           });
@@ -107,7 +110,8 @@ function createThumbnailStrip(shname,callback) {
 
 function generateThumbnails(filename,shname,io) {
   var command = ffmpeg(filename);
-
+	var uploadFolder = path.join(__dirname,'../uploads');
+	var file_url = path.join('uploads',path.basename(filename));
   command.ffprobe(function(err, meta) {
     if(err) {
       console.log(err);
@@ -130,6 +134,15 @@ function generateThumbnails(filename,shname,io) {
         // return next(new Error('No video stream in input, cannot take screenshots'));
       }
 
+			//console.log('stream:',vstream)
+			var ss = vstream.start_time;
+
+			if(ss) {
+				ss = parseFloat(ss)
+				ss *= -1
+			}
+			//console.log('ss:',ss)
+
       var duration = Number(vstream.duration);
       var fps = 1;
       var frames = Math.ceil(duration / fps);
@@ -139,13 +152,13 @@ function generateThumbnails(filename,shname,io) {
       } else {
         // console.log('Duration:'+duration);
       }
-      command
-      .output('./uploads/'+shname+'%d.png')
+      var stripper = command
+			.output(path.join(uploadFolder,shname+'%d.png'))
       .outputOptions('-vf', 'fps='+fps+',scale=100:-1')
       .on('end', function() {
         createThumbnailStrip(shname,function(err,strip,strip_width) {
           console.log("END generating "+frames+" frames.");
-          io.emit('uploads/'+shname+'-thumbnail.png',{progress:100,strip:strip, video_src:filename, strip_width:strip_width});
+          io.emit('uploads/'+shname+'-thumbnail.png',{progress:100,strip:strip, video_src:file_url, strip_width:strip_width});
           // convertVideo(filename,duration);
         });
       })
@@ -158,13 +171,17 @@ function generateThumbnails(filename,shname,io) {
         var percent = Math.ceil((progress.frames/frames)*100);
         io.emit('uploads/'+shname+'-thumbnail.png',{progress:percent});
         // console.log("Progress:"+percent);//JSON.stringify(progress, null,2));
-      })
-      .run();
+      });
+			if(ss) {
+				stripper.inputOptions('-ss', ss);
+			}
+      stripper.run();
     }
   }); 
 }
 
 exports.upload = function(req,res,io) {
+	console.log('uploading...')
     _upload(req,res,function(err) {
         if(err) {
             return res.status(500).send(err);
@@ -188,7 +205,8 @@ exports.requestSlot = function(req,res) {
 exports.processSlot = function(slot,res,io) {
   var filename = slot;
   var shname = filename.substring(0,filename.lastIndexOf("."));
-  filename = 'uploads/'+filename;
+	var uploadFolder = path.join(__dirname,'../uploads');
+	filename = path.join(uploadFolder,filename);
   if(slot.startsWith('video-')) {
     var command = ffmpeg(filename);
     command
@@ -209,7 +227,7 @@ exports.processSlot = function(slot,res,io) {
       })
       .screenshots({
         count: 1,
-        folder: './uploads',
+        folder: uploadFolder,
         filename: shname+'-thumbnail.png',
         size:'200x?'
       });
