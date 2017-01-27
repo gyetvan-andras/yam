@@ -2,8 +2,8 @@
 Description=YAM Server
 
 [Service]
-ExecStart=/usr/local/bin/node /home/gyand/yam/server.js >> /var/log/yam.log 2>&1
-WorkingDirectory=/home/gyand/yam   # Required on some systems
+ExecStart=/usr/bin/node /home/gyand/work/yam/server.js
+#WorkingDirectory=/home/gyand/work/yam   # Required on some systems
 Restart=always
 RestartSec=10                       # Restart service after 10 seconds if node service crashes
 StandardOutput=syslog               # Output to syslog
