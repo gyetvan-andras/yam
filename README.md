@@ -2,7 +2,14 @@
 It is a proof of concept HTML5 Animation editor. I have two purposes to put it here:
 
 1. if you find any piece of this code usefull, just use it as you wish
-2. I've spent several hours from my spare time to put it all together. It is a fun project for me, with a clear vision about what could it be. So if you know someone who is interested in putting some money into it, just drop me a message :) I'd like to work on it 120%!
+2. I've spent several hours from my spare time to put it all together. It is a fun project for me, with a clear vision about what could it be. So if you know someone who is interested in putting some money into it, just drop me a message :)
+
+#Acknowledgment
+YAM uses several libraries:
+
+1. [PixiJS](http://www.pixijs.com) - the fastest, most flexible 2D WebGL renderer
+2. [TweenJS](http://www.createjs.com/tweenjs) - powerful JavaScript library for tweening and animating HTML5 and JavaScript properties
+3. [Vue](https://vuejs.org) - The Progressive JavaScript Framework
 
 # WARNING :)
 Be aware that this repo contains some large test data, for example a test mp4 and some image. You've been warned :D
@@ -28,7 +35,7 @@ The editor contains the following features:
 
 ##Browser compatibility
 The YAM Editor works well on Chrome and Safari browsers. Firefox is almost there, probably with some tweaks it can work. MS browsers (Edge, IE) are not compatible.
-The YAM Player (embedded to play the animation) is tested on Safari, Chrome, Firefox. MS browsers probably supported. I need to boot into Windows to test them.
+The YAM Player (embedded to play the animation) is tested on Safari, Chrome, Firefox and on MS Edge. 
 
 ##Take a look
 Please note that the server is running on a very limited VPS machine [ArubaCloud almost free solution](https://www.arubacloud.com/vps/technical-specs-virtual-private-server.aspx)
