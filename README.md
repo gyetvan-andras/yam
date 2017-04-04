@@ -4,7 +4,7 @@ It is a proof of concept HTML5 Animation editor. I have two purposes to put it h
 1. if you find any piece of this code usefull, just use it as you wish
 2. I've spent several hours from my spare time to put it all together. It is a fun project for me, with a clear vision about what could it be. So if you know someone who is interested in putting some money into it, just drop me a message :)
 
-#Acknowledgment
+# Acknowledgment
 YAM uses several libraries:
 
 1. [PixiJS](http://www.pixijs.com) - the fastest, most flexible 2D WebGL renderer
@@ -33,17 +33,17 @@ The editor contains the following features:
 </div>
 ```
 
-##Browser compatibility
+## Browser compatibility
 The YAM Editor works well on Chrome and Safari browsers. Firefox is almost there, probably with some tweaks it can work. MS browsers (Edge, IE) are not compatible.
 The YAM Player (embedded to play the animation) is tested on Safari, Chrome, Firefox and on MS Edge. 
 
-##Take a look
+## Take a look
 Please note that the server is running on a very limited VPS machine [ArubaCloud almost free solution](https://www.arubacloud.com/vps/technical-specs-virtual-private-server.aspx)
 
 1. [Two animations embedded into a page](http://gettheyam.com:7777/yam_host.html)
 2. [YAM Editor](http://gettheyam.com:7777/editor_shell.html) I am really sorry, but this editor deployment is just for try out purposes. You cannot add your own images, however you can use what is provided in the sticker library.
 
-##In Action - click on images to view the videos
+## In Action - click on images to view the videos
 
 <p align="center">
 	<a href="https://www.youtube.com/watch?v=50dGjxvQiRU">
@@ -79,31 +79,31 @@ Please note that the server is running on a very limited VPS machine [ArubaCloud
 ## Installation
 
 To process video files YAM Server requires the following tools to operate:
-#fonts
-##Ubuntu
+# fonts
+## Ubuntu
 ```
 sudo apt-get install fontconfig
 ```
-#ffmpeg
-##Ubuntu (16.04 LTS)
+# ffmpeg
+## Ubuntu (16.04 LTS)
 ```
 sudo add-apt-repository ppa:jonathonf/ffmpeg-3
 sudo apt update && sudo apt install ffmpeg libav-tools x264 x265
 ```
-##OSX
+## OSX
 ```
 sudo port install ffmpeg +gpl +postproc +lame +theora +libogg +vorbis +nonfree
 ```
-#GraphicsMagick
-##Ubuntu
+# GraphicsMagick
+## Ubuntu
 ```
 sudo apt-get install graphicsmagick
 ```
-##OSX
+## OSX
 ```
 sudo port install graphicsmagick
 ```
-##Steps needed to deploy the YAM Server from the scratch
+## Steps needed to deploy the YAM Server from the scratch
 
 1. checkout the repo
 2. cd yam
